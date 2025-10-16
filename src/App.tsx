@@ -319,21 +319,28 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 // import Home from "./pages/Homepage";
-import About from "./components/About";
+// import About from "./components/About";
 import PracticePage from "./pages/MainPracticePage";
 import Courses from "./components/Courses";
 import Careers from "./components/Careers";
 import Contact from "./components/ContactUs";
 import BusinessPartners from "./components/BusineesPartner";
+import { LaunchingSoon } from "./components/LaunchingSoon.tsx";
 
 // Individual practice section pages
-import DSAProblems from "./pages/ServiceBasedPatternDSA";//ye change kiya commit ke time changes
+// import DSAProblems from "./pages/ServiceBasedPatternDSA";//ye change kiya commit ke time changes
 import ServiceBasedDSA from "./pages/ServiceBasedDSA";
-import Blind75 from "./pages/Blind75";
+import Blind75 from "./pages/Blind75.tsx";
 import AllInOneDSA from "./pages/ALLINONEDSA";
 import Algorithm from "./pages/Algorithm";
 import ServiceBasedPatternDSA from "./pages/ServiceBasedPatternDSA";
+import NumbersProblems from "./pages/NumbersProblems";
+import ProgramingLang  from "./pages/ProgramingLang.tsx";
+import CP from "./pages/CP";
 import Homepage from "./pages/Homepage";
+import Practice from "./pages/Praactice"
+
+
 //import
 const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -345,22 +352,27 @@ const App: React.FC = () => {
       <Routes>
         {/* Main pages */}
         <Route path="/" element={<Homepage darkMode={darkMode}/>} />
-        <Route path="/about" element={<About darkMode={darkMode} />} />
+         <Route path="/about" element={<LaunchingSoon  darkMode={darkMode}/>} />
         <Route path="/practice" element={<PracticePage darkMode={darkMode} />} />
         <Route path="/courses" element={<Courses darkMode={darkMode}/>} />
         <Route path="/careers" element={<Careers darkMode={darkMode}/>} />
         <Route path="/contact" element={<Contact darkMode={darkMode}/>} />
         <Route path="/businesspartner" element={<BusinessPartners darkMode={darkMode}/>} />
-        
+        <Route path="/launchingsoon" element={<LaunchingSoon darkMode={darkMode}/>} />
+
 
 
         {/* Individual practice section pages */}
-        <Route path="/practice/dsa-problems" element={<DSAProblems darkMode={darkMode} />} />
+        <Route path="/practice/practice" element={<Practice darkMode={darkMode} />} />
         <Route path="/practice/service-based-dsa" element={<ServiceBasedDSA darkMode={darkMode} />} />
         <Route path="/practice/blind-75" element={<Blind75 darkMode={darkMode} />} />
         <Route path="/practice/all-in-one-dsa" element={<AllInOneDSA darkMode={darkMode} />} />
         <Route path="/practice/algorithm" element={<Algorithm darkMode={darkMode} />} />
         <Route path="/practice/service-based-pattern-dsa" element={<ServiceBasedPatternDSA darkMode={darkMode} />} />
+        <Route path="/practice/NumbersProblems" element={<NumbersProblems darkMode={darkMode} />} />
+        <Route path="/practice/ProgramingLang" element={<ProgramingLang darkMode={darkMode} />} />
+       <Route path="/practice/CP" element={<CP darkMode={darkMode}/>} /> 
+     
       </Routes>
 
       <Footer darkMode={darkMode}/>
