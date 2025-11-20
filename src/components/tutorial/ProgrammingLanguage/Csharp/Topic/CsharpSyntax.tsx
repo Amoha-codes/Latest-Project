@@ -1,19 +1,19 @@
 import React from 'react';
 
 const CSharpSyntax: React.FC = () => (
-  <div className="mt-20"> {/* 👈 pushes content below navbar */}
-    <h1 className="text-4xl font-extrabold text-gray-900 border-b-2 pb-2">
+  <div className="mt-20">
+    <h1 className="text-4xl font-extrabold  border-b-2 pb-2">
        C# Syntax
     </h1>
 
-    <p className="text-lg text-gray-700 leading-relaxed mt-4">
+    <p className="text-lg  leading-relaxed mt-4">
       In the previous chapter, we created a C# file called <b>Program.cs</b>, 
       and used the following code to print <b>"Hello World"</b> to the screen:
     </p>
 
-    <h2 className="text-2xl font-bold text-blue-600 mt-6">Program.cs</h2>
+    <h2 className="text-2xl font-bold  mt-6">Program.cs</h2>
 
-    <div className="bg-gray-900 text-green-400 font-mono p-4 rounded-lg shadow-md mt-4">
+    <div className="bg-gray-100 text-black p-3 rounded-md font-mono">
       <pre>
 {`using System;
 
@@ -30,14 +30,14 @@ namespace HelloWorld
       </pre>
     </div>
 
-    <h3 className="text-xl font-semibold text-gray-800 mt-4">Result:</h3>
+    <h3 className="text-xl font-semibold  mt-4">Result:</h3>
     <div className="bg-gray-100 border-l-4 border-gray-400 p-3 rounded-lg text-gray-800 font-mono mt-2">
       Hello World!
     </div>
 
-    <h2 className="text-2xl font-bold text-blue-600 mt-6">Example Explained</h2>
+    <h2 className="text-2xl font-bold mt-6">Example Explained</h2>
 
-    <ul className="list-disc list-inside ml-5 text-gray-700 space-y-2 mt-2 leading-relaxed">
+    <ul className="list-disc list-inside ml-5  space-y-2 mt-2 leading-relaxed">
       <li><b>Line 1:</b> <code>using System</code> means we can use classes from the <b>System</b> namespace.</li>
       <li><b>Line 2:</b> A blank line. C# ignores white space. Multiple lines make code more readable.</li>
       <li><b>Line 3:</b> <code>namespace</code> is used to organize code and acts as a container for classes and other namespaces.</li>
@@ -59,7 +59,7 @@ namespace HelloWorld
       </ul>
     </div>
 
-    <h3 className="text-xl font-semibold text-gray-800 mt-6">Expected Output:</h3>
+    <h3 className="text-xl font-semibold  mt-6">Expected Output:</h3>
     <div className="bg-gray-100 border-l-4 border-gray-400 p-3 rounded-lg text-gray-800 font-mono mt-2">
       Hello World!
     </div>

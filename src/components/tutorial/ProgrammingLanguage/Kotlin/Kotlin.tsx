@@ -56,23 +56,20 @@ inheritence:KotlinInheritance
 
 };
 
-const GO: React.FC = () => {
-  // Load Home content first by default
-  const [selectedTopic, setSelectedTopic] = useState<string>("home");
+const Kotlin: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
+  const [selectedTopic, setSelectedTopic] = useState("home");
 
-  const handleSelectTopic = (componentKey: string) => {
-    setSelectedTopic(componentKey.toLowerCase()); // normalize to lowercase
+  const handleSelectTopic = (key: string) => {
+    setSelectedTopic(key.toLowerCase());
   };
 
-  const CurrentComponent = topicComponents[selectedTopic] || KotlinHome; // fallback to GoHome if not found
+  const CurrentComponent = topicComponents[selectedTopic] || KotlinHome;
 
   return (
-    <div className="flex min-h-screen bg-gray-50">
-      <Layout selected={selectedTopic} onSelect={handleSelectTopic}>
-        <CurrentComponent /> {/* Always render a valid component */}
-      </Layout>
-    </div>
+    <Layout selected={selectedTopic} onSelect={handleSelectTopic} darkMode={darkMode}>
+      <CurrentComponent />
+    </Layout>
   );
 };
 
-export default GO;
+export default Kotlin;

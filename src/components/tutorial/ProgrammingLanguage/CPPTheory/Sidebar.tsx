@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from "react";
 import { ChevronDown, ChevronRight } from "lucide-react";
-import type { SidebarItem } from "../../../data/tutorial/CPPTheory/cppData";
+import type { SidebarItem } from "../../../../data/tutorial/CPPTheory/cppData";
 
 interface SidebarProps {
   data: SidebarItem[];

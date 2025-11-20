@@ -88,29 +88,19 @@ const topicComponents: { [key: string]: React.FC } = {
 
 };
 
-const Csharp: React.FC = () => {
-  // Load Home content first by default
-  const [selectedTopic, setSelectedTopic] = useState<string>("home");
+const Csharp: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
+  const [selectedTopic, setSelectedTopic] = useState("home");
 
-  const handleSelectTopic = (componentKey: string) => {
-    setSelectedTopic(componentKey);
+  const handleSelectTopic = (key: string) => {
+    setSelectedTopic(key.toLowerCase());
   };
 
   const CurrentComponent = topicComponents[selectedTopic] || Home;
 
   return (
-    <div className="flex min-h-screen bg-gray-50 ">
-      <Layout selected={selectedTopic} onSelect={handleSelectTopic}>
-        {/* Show selected topic (Home will be shown initially) */}
-        {CurrentComponent ? (
-          <CurrentComponent />
-        ) : (
-          <div className="text-center p-10 text-xl text-red-500">
-            Content not found for "{selectedTopic}".
-          </div>
-        )}
-      </Layout>
-    </div>
+    <Layout selected={selectedTopic} onSelect={handleSelectTopic} darkMode={darkMode}>
+      <CurrentComponent />
+    </Layout>
   );
 };
 

@@ -1,22 +1,22 @@
 import React from "react";
 
 const GoFloat = () => (
-  <div className="mt-20">
-    <h1 className="text-4xl font-extrabold text-gray-900 border-b-2 pb-2">
+  <>
+    <h1 className="text-4xl font-extrabold  border-b-2 pb-2 mt-17">
       Go Float Data Types
     </h1>
 
-    <p className="text-lg text-gray-700 leading-relaxed mt-4">
+    <p className="text-lg  leading-relaxed mt-4">
       The float data types are used to store positive and negative numbers with a
       decimal point, like <b>35.3</b>, <b>-2.34</b>, or <b>3597.34987</b>.
     </p>
 
-    <p className="text-lg text-gray-700 leading-relaxed mt-4">
+    <p className="text-lg  leading-relaxed mt-4">
       The float data type has two keywords:
     </p>
 
     <div className="overflow-x-auto mt-4">
-      <table className="min-w-full border text-gray-800 text-lg">
+      <table className="min-w-full border  text-lg">
         <thead>
           <tr className="bg-gray-200">
             <th className="border px-4 py-2 text-left">Type</th>
@@ -39,14 +39,14 @@ const GoFloat = () => (
       </table>
     </div>
 
-    <p className="text-lg text-gray-700 leading-relaxed mt-4">
+    <p className="text-lg  leading-relaxed mt-4">
       <b>Tip:</b> The default type for float is <b>float64</b>. If you do not
       specify a type, the type will be float64.
     </p>
 
-    <h2 className="text-2xl font-bold text-gray-900 mt-6">The float32 Keyword</h2>
+    <h2 className="text-2xl font-bold  mt-6">The float32 Keyword</h2>
 
-    <p className="text-lg text-gray-700 leading-relaxed mt-4">
+    <p className="text-lg  leading-relaxed mt-4">
       This example shows how to declare some variables of type float32:
     </p>
 
@@ -62,13 +62,13 @@ func main() {
 }`}
     </pre>
 
-    <h2 className="text-2xl font-bold text-gray-900 mt-6">The float64 Keyword</h2>
+    <h2 className="text-2xl font-bold  mt-6">The float64 Keyword</h2>
 
-    <p className="text-lg text-gray-700 leading-relaxed mt-4">
+    <p className="text-lg  leading-relaxed mt-4">
       The float64 data type can store a larger set of numbers than float32.
     </p>
 
-    <p className="text-lg text-gray-700 leading-relaxed mt-4">
+    <p className="text-lg  leading-relaxed mt-4">
       Example: This example shows how to declare a variable of type float64:
     </p>
 
@@ -82,13 +82,13 @@ func main() {
 }`}
     </pre>
 
-    <h2 className="text-2xl font-bold text-gray-900 mt-6">Which Float Type to Use?</h2>
+    <h2 className="text-2xl font-bold  mt-6">Which Float Type to Use?</h2>
 
-    <p className="text-lg text-gray-700 leading-relaxed mt-4">
+    <p className="text-lg  leading-relaxed mt-4">
       The type of float to choose depends on the value the variable has to store.
     </p>
 
-    <p className="text-lg text-gray-700 leading-relaxed mt-4">
+    <p className="text-lg  leading-relaxed mt-4">
       Example: This example will result in an error because 3.4e+39 is out of
       range for float32:
     </p>
@@ -103,11 +103,11 @@ func main() {
 }`}
     </pre>
 
-    <p className="text-lg text-gray-700 leading-relaxed mt-4">
+    <p className="text-lg  leading-relaxed mt-4">
       <b>Result:</b> <br />
       ./prog.go:5:7: constant 3.4e+39 overflows float32
     </p>
-  </div>
+  </>
 );
 
 export default GoFloat;

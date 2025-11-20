@@ -787,7 +787,7 @@ greet("Ayush");`}
 
     content: (
       <>
-      <section className="text-gray-800 dark:text-gray-100">
+      <section className=" dark:text-gray-100">
   <h2 className="text-2xl font-medium mb-4 border-b pb-2 border-purple-200 mt-10">
     JavaScript Comments
   </h2>

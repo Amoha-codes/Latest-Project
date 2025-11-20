@@ -1,7 +1,7 @@
 import React from "react";
 
 const GoMultipleVariable: React.FC = () => (
-  <div className="mt-20 text-gray-800 space-y-6">
+  <div className="mt-17  dark:text-white space-y-6">
     <h1 className="text-4xl font-extrabold border-b-2 pb-2">
       Go Multiple Variable Declaration
     </h1>
@@ -13,7 +13,7 @@ const GoMultipleVariable: React.FC = () => (
     <h2 className="text-2xl font-bold mt-6">Example</h2>
     <p>This example shows how to declare multiple variables on the same line:</p>
 
-    <div className="bg-gray-100 p-3 rounded-md font-mono">
+    <div className="bg-gray-100 text-black dark:bg-gray-100 dark:text-black p-3 rounded-md font-mono">
       package main
       <br />
       import ("fmt")
@@ -46,7 +46,7 @@ const GoMultipleVariable: React.FC = () => (
     </p>
 
     <h2 className="text-2xl font-bold mt-6">Example</h2>
-    <div className="bg-gray-100 p-3 rounded-md font-mono">
+    <div className="bg-gray-100 text-black dark:bg-gray-100 dark:text-black p-3 rounded-md font-mono">
       package main
       <br />
       import ("fmt")
@@ -79,7 +79,7 @@ const GoMultipleVariable: React.FC = () => (
     </p>
 
     <h3 className="text-xl font-semibold mt-4">Example</h3>
-    <div className="bg-gray-100 p-3 rounded-md font-mono">
+    <div className="bg-gray-100 text-black dark:bg-gray-100 dark:text-black p-3 rounded-md font-mono">
       package main
       <br />
       import ("fmt")

@@ -1,7 +1,7 @@
 import React from "react";
 
 const GoDeclareVariables: React.FC = () => (
-  <div className="mt-20 text-gray-800 space-y-6">
+  <div className="mt-17  dark:text-white space-y-6">
     <h1 className="text-4xl font-extrabold border-b-2 pb-2">Go Variables</h1>
 
     <p>
@@ -29,16 +29,16 @@ const GoDeclareVariables: React.FC = () => (
     </p>
 
     <h4 className="font-semibold">Syntax</h4>
-    <div className="bg-gray-100 p-3 rounded-md font-mono">var variablename type = value</div>
+    <div className="bg-gray-100 text-black dark:bg-gray-100 dark:text-black p-3 rounded-md font-mono">var variable name type = value</div>
     <p><b>Note:</b> You always have to specify either type or value (or both).</p>
 
-    <h3 className="text-xl font-semibold mt-4">2. With the := sign</h3>
+    <h3 className="bg-gray-100 text-black dark:bg-gray-100 dark:text-black p-3 rounded-md font-mono">2. With the := sign</h3>
     <p>
       Use the <b>:=</b> sign, followed by the variable value:
     </p>
 
     <h4 className="font-semibold">Syntax</h4>
-    <div className="bg-gray-100 p-3 rounded-md font-mono">variablename := value</div>
+    <div className="bg-gray-100 text-black dark:bg-gray-100 dark:text-black p-3 rounded-md font-mono">variablename := value</div>
     <p>
       <b>Note:</b> The type of the variable is inferred from the value (the compiler decides the type).
       <br />
@@ -50,7 +50,7 @@ const GoDeclareVariables: React.FC = () => (
       If the value of a variable is known from the start, you can declare the variable and assign a value to it on one line:
     </p>
 
-    <div className="bg-gray-100 p-3 rounded-md font-mono">
+    <div className="bg-gray-100 text-black dark:bg-gray-100 dark:text-black p-3 rounded-md font-mono">
       package main
       <br />
       import ("fmt")
@@ -83,7 +83,7 @@ const GoDeclareVariables: React.FC = () => (
       In Go, all variables are initialized. If you declare a variable without an initial value, it will be set to the default value of its type:
     </p>
 
-    <div className="bg-gray-100 p-3 rounded-md font-mono">
+    <div className="bg-gray-100 text-black dark:bg-gray-100 dark:text-black p-3 rounded-md font-mono">
       package main
       <br />
       import ("fmt")
@@ -125,7 +125,7 @@ const GoDeclareVariables: React.FC = () => (
       You can assign a value to a variable after it is declared. This is helpful when the value is not initially known.
     </p>
 
-    <div className="bg-gray-100 p-3 rounded-md font-mono">
+    <div className="bg-gray-100 text-black dark:bg-gray-100 dark:text-black p-3 rounded-md font-mono">
       package main
       <br />
       import ("fmt")
@@ -169,7 +169,7 @@ const GoDeclareVariables: React.FC = () => (
     </table>
 
     <h3 className="text-xl font-semibold mt-4">Example (using var outside a function)</h3>
-    <div className="bg-gray-100 p-3 rounded-md font-mono">
+    <div className="bg-gray-100 text-black dark:bg-gray-100 dark:text-black p-3 rounded-md font-mono">
       package main
       <br />
       import ("fmt")
@@ -200,7 +200,7 @@ const GoDeclareVariables: React.FC = () => (
       Since <b>:=</b> is used outside of a function, running the program results in an error:
     </p>
 
-    <div className="bg-gray-100 p-3 rounded-md font-mono">
+    <div className="bg-gray-100 text-black dark:bg-gray-100 dark:text-black p-3 rounded-md font-mono">
       package main
       <br />
       import ("fmt")

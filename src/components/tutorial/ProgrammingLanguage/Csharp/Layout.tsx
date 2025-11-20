@@ -1,3 +1,27 @@
+// import React from "react";
+// import GOSidebar from "./GOSidebar";
+
+// interface LayoutProps {
+//   children: React.ReactNode;
+//   selected: string;
+//   onSelect: (component: string) => void;
+// }
+
+// const Layout: React.FC<LayoutProps> = ({ children, selected, onSelect }) => {
+//   return (
+//     <div className="flex min-h-screen">
+//       {/* Sidebar */}
+//       <GOSidebar selected={selected} onSelect={onSelect} />
+
+//       {/* Main Content */}
+//       <main className="flex-1 p-8 bg-white overflow-y-auto">
+//         {children}
+//       </main>
+//     </div>
+//   );
+// };
+
+// export default Layout;
 import React from "react";
 import CsharpSidebar from "./CsharpSidebar";
 
@@ -5,18 +29,21 @@ interface LayoutProps {
   children: React.ReactNode;
   selected: string;
   onSelect: (component: string) => void;
+  darkMode: boolean;
 }
 
-const Layout: React.FC<LayoutProps> = ({ children, selected, onSelect }) => {
+const Layout: React.FC<LayoutProps> = ({ children, selected, onSelect, darkMode }) => {
   return (
-    <div className="flex min-h-screen">
-      {/* Sidebar */}
-      <CsharpSidebar selected={selected} onSelect={onSelect} />
+    <div className={`flex min-h-screen ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"}`}>
+      <CsharpSidebar selected={selected} onSelect={onSelect} darkMode={darkMode} />
 
-      {/* Main Content */}
-      <main className="flex-1 p-8 bg-white overflow-y-auto">
-        {children}
-      </main>
+<main
+  className={`flex-1 p-8 overflow-y-auto prose max-w-none
+    ${darkMode ? "prose-invert text-white bg-gray-900" : "text-gray-900 bg-white"}`}
+>
+  {children}
+</main>
+
     </div>
   );
 };

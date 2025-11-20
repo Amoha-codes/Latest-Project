@@ -1,24 +1,24 @@
 import React from "react";
 
 const GoAssignmentOperators: React.FC = () => (
-  <div className="mt-20 px-6">
+  <>
     {/* Main Heading */}
-    <h1 className="text-4xl font-extrabold text-gray-900 border-b-2 pb-2">
+    <h1 className="text-4xl font-extrabold  border-b-2 pb-2 mt-17">
       Go Assignment Operators
     </h1>
 
     {/* Intro Paragraph */}
-    <p className="text-lg text-gray-700 mt-4 leading-relaxed">
+    <p className="text-lg  mt-4 leading-relaxed">
       Assignment operators are used to assign values to variables in Go. 
       The most basic assignment operator is the <code>=</code> operator, 
       which assigns the value on the right to the variable on the left.
     </p>
 
     {/* Example 1 */}
-    <h2 className="text-2xl font-bold text-gray-800 mt-6">
+    <h2 className="text-2xl font-bold  mt-6">
       Example 1: Basic Assignment (=)
     </h2>
-    <pre className="bg-gray-900 text-gray-100 p-4 rounded-lg mt-2 overflow-x-auto">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -29,13 +29,13 @@ func main() {
     </pre>
 
     {/* Example 2 */}
-    <h2 className="text-2xl font-bold text-gray-800 mt-6">
+    <h2 className="text-2xl font-bold  mt-6">
       Example 2: Addition Assignment (+=)
     </h2>
-    <p className="text-gray-700 mt-2">
+    <p className=" mt-2">
       The addition assignment operator (<code>+=</code>) adds a value to a variable and stores the result in that variable.
     </p>
-    <pre className="bg-gray-900 text-gray-100 p-4 rounded-lg mt-2 overflow-x-auto">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -47,13 +47,13 @@ func main() {
     </pre>
 
     {/* Table Section */}
-    <h2 className="text-2xl font-bold text-gray-800 mt-6">
+    <h2 className="text-2xl font-bold  mt-6">
       List of Assignment Operators
     </h2>
 
     <div className="overflow-x-auto mt-4">
-      <table className="min-w-full border border-gray-300 text-left text-gray-800">
-        <thead className="bg-gray-200">
+      <table className="min-w-full border border-gray-300 text-left ">
+        <thead>
           <tr>
             <th className="py-2 px-4 border">Operator</th>
             <th className="py-2 px-4 border">Example</th>
@@ -66,7 +66,7 @@ func main() {
             <td className="py-2 px-4 border">x = 5</td>
             <td className="py-2 px-4 border">x = 5</td>
           </tr>
-          <tr className="bg-gray-50">
+          <tr>
             <td className="py-2 px-4 border text-center">+=</td>
             <td className="py-2 px-4 border">x += 3</td>
             <td className="py-2 px-4 border">x = x + 3</td>
@@ -76,7 +76,7 @@ func main() {
             <td className="py-2 px-4 border">x -= 3</td>
             <td className="py-2 px-4 border">x = x - 3</td>
           </tr>
-          <tr className="bg-gray-50">
+          <tr >
             <td className="py-2 px-4 border text-center">*=</td>
             <td className="py-2 px-4 border">x *= 3</td>
             <td className="py-2 px-4 border">x = x * 3</td>
@@ -86,7 +86,7 @@ func main() {
             <td className="py-2 px-4 border">x /= 3</td>
             <td className="py-2 px-4 border">x = x / 3</td>
           </tr>
-          <tr className="bg-gray-50">
+          <tr >
             <td className="py-2 px-4 border text-center">%=
             </td>
             <td className="py-2 px-4 border">x %= 3</td>
@@ -97,7 +97,7 @@ func main() {
             <td className="py-2 px-4 border">x &= 3</td>
             <td className="py-2 px-4 border">x = x & 3</td>
           </tr>
-          <tr className="bg-gray-50">
+          <tr>
             <td className="py-2 px-4 border text-center">|=</td>
             <td className="py-2 px-4 border">x |= 3</td>
             <td className="py-2 px-4 border">x = x | 3</td>
@@ -107,7 +107,7 @@ func main() {
             <td className="py-2 px-4 border">x ^= 3</td>
             <td className="py-2 px-4 border">x = x ^ 3</td>
           </tr>
-          <tr className="bg-gray-50">
+          <tr>
             <td className="py-2 px-4 border text-center">&gt;&gt;=</td>
             <td className="py-2 px-4 border">x &gt;&gt;= 3</td>
             <td className="py-2 px-4 border">x = x &gt;&gt; 3</td>
@@ -120,7 +120,7 @@ func main() {
         </tbody>
       </table>
     </div>
-  </div>
+  </>
 );
 
 export default GoAssignmentOperators;

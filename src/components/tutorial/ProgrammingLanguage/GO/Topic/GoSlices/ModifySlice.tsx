@@ -1,21 +1,21 @@
 import React from "react";
 
 const GoModifySlices: React.FC = () => (
-  <div className="mt-20 px-6">
-    <h1 className="text-4xl font-extrabold text-gray-900 border-b-2 pb-2">
+  <>
+    <h1 className="text-4xl font-extrabold  border-b-2 pb-2 mt-17">
       Go Access, Change, Append and Copy Slices
     </h1>
 
     {/* Access Elements of a Slice */}
-    <h2 className="text-2xl font-bold text-gray-800 mt-6">
+    <h2 className="text-2xl font-bold  mt-6">
       Access Elements of a Slice
     </h2>
-    <p className="text-lg text-gray-700 mt-3 leading-relaxed">
+    <p className="text-lg  mt-3 leading-relaxed">
       You can access a specific slice element by referring to the index number.
       In Go, indexes start at 0. That means that [0] is the first element, [1] is the second element, etc.
     </p>
 
-    <pre className="bg-gray-100 p-4 rounded-lg mt-3 overflow-x-auto">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -25,21 +25,21 @@ func main() {
   fmt.Println(prices[2])
 }`}</pre>
 
-    <p className="text-gray-800 mt-2">Result:</p>
-    <pre className="bg-gray-50 p-2 rounded-md">
+    <p className=" mt-2">Result:</p>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`10
 30`}
     </pre>
 
     {/* Change Elements of a Slice */}
-    <h2 className="text-2xl font-bold text-gray-800 mt-6">
+    <h2 className="text-2xl font-bold  mt-6">
       Change Elements of a Slice
     </h2>
-    <p className="text-lg text-gray-700 mt-3 leading-relaxed">
+    <p className="text-lg  mt-3 leading-relaxed">
       You can change a specific slice element by referring to its index number.
     </p>
 
-    <pre className="bg-gray-100 p-4 rounded-lg mt-3 overflow-x-auto">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono   ">
 {`package main
 import ("fmt")
 
@@ -50,27 +50,27 @@ func main() {
   fmt.Println(prices[2])
 }`}</pre>
 
-    <p className="text-gray-800 mt-2">Result:</p>
-    <pre className="bg-gray-50 p-2 rounded-md">
+    <p className=" mt-2">Result:</p>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`10
 50`}
     </pre>
 
     {/* Append Elements To a Slice */}
-    <h2 className="text-2xl font-bold text-gray-800 mt-6">
+    <h2 className="text-2xl font-bold  mt-6">
       Append Elements To a Slice
     </h2>
-    <p className="text-lg text-gray-700 mt-3 leading-relaxed">
+    <p className="text-lg  mt-3 leading-relaxed">
       You can append elements to the end of a slice using the{" "}
       <code>append()</code> function:
     </p>
 
-    <pre className="bg-gray-100 p-4 rounded-lg mt-3 overflow-x-auto">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`slice_name = append(slice_name, element1, element2, ...)`}
     </pre>
 
-    <p className="text-gray-800 mt-2">Example:</p>
-    <pre className="bg-gray-100 p-4 rounded-lg overflow-x-auto">
+    <p className=" mt-2">Example:</p>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -86,8 +86,8 @@ func main() {
   fmt.Printf("capacity = %d\\n", cap(myslice1))
 }`}</pre>
 
-    <p className="text-gray-800 mt-2">Result:</p>
-    <pre className="bg-gray-50 p-2 rounded-md overflow-x-auto">
+    <p className=" mt-2">Result:</p>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`myslice1 = [1 2 3 4 5 6]
 length = 6
 capacity = 6
@@ -97,15 +97,15 @@ capacity = 12`}
     </pre>
 
     {/* Append One Slice To Another */}
-    <h2 className="text-2xl font-bold text-gray-800 mt-6">
+    <h2 className="text-2xl font-bold  mt-6">
       Append One Slice To Another Slice
     </h2>
-    <p className="text-lg text-gray-700 mt-3 leading-relaxed">
+    <p className="text-lg  mt-3 leading-relaxed">
       You can append all the elements of one slice to another slice using{" "}
       <code>append(slice1, slice2...)</code>.
     </p>
 
-    <pre className="bg-gray-100 p-4 rounded-lg mt-3 overflow-x-auto">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -118,22 +118,22 @@ func main() {
   fmt.Printf("capacity=%d\\n", cap(myslice3))
 }`}</pre>
 
-    <p className="text-gray-800 mt-2">Result:</p>
-    <pre className="bg-gray-50 p-2 rounded-md">
+    <p className=" mt-2">Result:</p>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`myslice3=[1 2 3 4 5 6]
 length=6
 capacity=6`}
     </pre>
 
     {/* Change The Length of a Slice */}
-    <h2 className="text-2xl font-bold text-gray-800 mt-6">
+    <h2 className="text-2xl font-bold  mt-6">
       Change The Length of a Slice
     </h2>
-    <p className="text-lg text-gray-700 mt-3 leading-relaxed">
+    <p className="text-lg  mt-3 leading-relaxed">
       Unlike arrays, it is possible to change the length of a slice.
     </p>
 
-    <pre className="bg-gray-100 p-4 rounded-lg mt-3 overflow-x-auto">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -155,8 +155,8 @@ func main() {
   fmt.Printf("capacity = %d\\n", cap(myslice1))
 }`}</pre>
 
-    <p className="text-gray-800 mt-2">Result:</p>
-    <pre className="bg-gray-50 p-2 rounded-md overflow-x-auto">
+    <p className=" mt-2">Result:</p>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`myslice1 = [10 11 12 13]
 length = 4
 capacity = 5
@@ -169,13 +169,13 @@ capacity = 10`}
     </pre>
 
     {/* Memory Efficiency */}
-    <h2 className="text-2xl font-bold text-gray-800 mt-6">Memory Efficiency</h2>
-    <p className="text-lg text-gray-700 mt-3 leading-relaxed">
+    <h2 className="text-2xl font-bold  mt-6">Memory Efficiency</h2>
+    <p className="text-lg  mt-3 leading-relaxed">
       When using slices, Go loads all underlying elements into memory. If the array is large and you only need a few elements, 
       it’s better to copy those elements using the <code>copy()</code> function to save memory.
     </p>
 
-    <pre className="bg-gray-100 p-4 rounded-lg mt-3 overflow-x-auto">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -194,8 +194,8 @@ func main() {
   fmt.Printf("capacity = %d\\n", cap(numbersCopy))
 }`}</pre>
 
-    <p className="text-gray-800 mt-2">Result:</p>
-    <pre className="bg-gray-50 p-2 rounded-md overflow-x-auto">
+    <p className=" mt-2">Result:</p>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`numbers = [1 2 3 4 5 6 7 8 9 10 11 12 13 14 15]
 length = 15
 capacity = 15
@@ -203,7 +203,7 @@ numbersCopy = [1 2 3 4 5]
 length = 5
 capacity = 5`}
     </pre>
-  </div>
+  </>
 );
 
 export default GoModifySlices;

@@ -10,7 +10,6 @@ import SwiftComments from "./Topic/SwiftComments";
 import SwiftVariables from "./Topic/Swift Variables/Variables";
 import SwiftPrintVariables from "./Topic/Swift Variables/PrintVariables";
 import SwiftMultipleVariables from "./Topic/Swift Variables/MultipleVariables";
-import SwiftConstants from "./Topic/Swift Variables/Constants";
 import SwiftIdentifiers from "./Topic/Swift Variables/Identifiers";
 import SwiftTextOutput from "./Topic/Swift Output/PrintText";
 import SwiftNumberOutput from "./Topic/Swift Output/PrintNumbers";
@@ -50,6 +49,15 @@ import SwiftElse from "./Topic/Swift IfElse/else";
 import SwiftForLoop from "./Topic/Swift For Loop/ForLoop";
 import SwiftNestedLoops from "./Topic/Swift For Loop/NestedLoop";
 import SwiftForEachLoop from "./Topic/Swift For Loop/Foreachloop";
+import Constants from "./Topic/Swift Variables/Constants";
+import SwiftsConstants from "./Topic/SwiftConstants";
+import SwiftRanges from "./Topic/SwiftRanges";
+import SwiftOverview from "./Topic/Swift Collection/Overview";
+import SwiftSets from "./Topic/Swift Collection/Sets";
+import Swiftdic from "./Topic/Swift Collection/Dict";
+import SwiftMap from "./Topic/Swift Collection/Map";
+import SwiftMutable from "./Topic/Swift Collection/Mutability";
+import SwiftSorting from "./Topic/Swift Collection/Sorting";
 
 // Map sidebar keys to actual components
 const topicComponents: { [key: string]: React.FC } = {
@@ -62,9 +70,10 @@ const topicComponents: { [key: string]: React.FC } = {
  variables:SwiftVariables,
  printvariables:SwiftPrintVariables,
  multiplevariables:SwiftMultipleVariables,
- constants:SwiftConstants,
+ swiftconstant:SwiftsConstants,
  identifiers:SwiftIdentifiers,
  printtext:SwiftTextOutput,
+ ranges:SwiftRanges,
  printnumbers: SwiftNumberOutput,
  datatypes:SwiftDataTypes,
  boolean:SwiftBoolean,
@@ -86,6 +95,7 @@ tuples:SwiftTuplesTypeAliases,
 operators:SwiftOperators,
 precedence:SwiftOperatorPrecedence,
 arithmetic:SwiftArithmeticOperators,
+constants:Constants,
 assignment:SwiftAssignmentOperators,
 logical:SwiftLogicalOperators,
 comparison:SwiftComparisonOperators,
@@ -102,29 +112,33 @@ nestedif:SwiftNestedIf,
 else:SwiftElse,
 forloop:SwiftForLoop,
 nestedloop:SwiftNestedLoops,
-foreachloop:SwiftForEachLoop
+foreachloop:SwiftForEachLoop,
+overview:SwiftOverview,
+sets:SwiftSets,
+dictionaries:Swiftdic,
+map:SwiftMap,
+mutability:SwiftMutable,
+sorting:SwiftSorting
+
 
 
 
 
 };
 
-const Swift: React.FC = () => {
-  // Load Home content first by default
-  const [selectedTopic, setSelectedTopic] = useState<string>("home");
+const Swift: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
+  const [selectedTopic, setSelectedTopic] = useState("home");
 
-  const handleSelectTopic = (componentKey: string) => {
-    setSelectedTopic(componentKey.toLowerCase()); // normalize to lowercase
+  const handleSelectTopic = (key: string) => {
+    setSelectedTopic(key.toLowerCase());
   };
 
-  const CurrentComponent = topicComponents[selectedTopic] || SwiftHome; // fallback to GoHome if not found
+  const CurrentComponent = topicComponents[selectedTopic] || SwiftHome;
 
   return (
-    <div className="flex min-h-screen bg-gray-50">
-      <Layout selected={selectedTopic} onSelect={handleSelectTopic}>
-        <CurrentComponent /> {/* Always render a valid component */}
-      </Layout>
-    </div>
+    <Layout selected={selectedTopic} onSelect={handleSelectTopic} darkMode={darkMode}>
+      <CurrentComponent />
+    </Layout>
   );
 };
 

@@ -2,27 +2,27 @@ import React from "react";
 
 const SwiftArraysLoop: React.FC = () => (
   <>
-    <h1 className="text-4xl font-extrabold text-gray-900 border-b-2 pb-2 mt-15">
+    <h1 className="text-4xl font-extrabold  border-b-2 pb-2 mt-15">
       Swift Arrays: Loop
     </h1>
 
-    <p className="text-lg text-gray-700 leading-relaxed mt-4">
+    <p className="text-lg  leading-relaxed mt-4">
       Swift provides multiple ways to loop through arrays. You can use <code>for-in</code> 
       to iterate over values, <code>enumerated()</code> to get index and value, or 
       <code>forEach</code> for a functional-style loop.
     </p>
 
     {/* Loop Elements */}
-    <h2 className="text-2xl font-bold text-[#6334B9] mt-6">Loop Elements</h2>
+    <h2 className="text-2xl font-bold mt-6">Loop Elements</h2>
 
-    <p className="text-gray-700 leading-relaxed mt-3">
+    <p className=" leading-relaxed mt-3">
       Use <code>for-in</code> to loop through array elements, or 
       <code>enumerated()</code> to get both index and value.
     </p>
 
-    <h3 className="text-xl font-bold text-gray-800 mt-4">Example</h3>
+    <h3 className="text-xl font-bold  mt-4">Example</h3>
 
-    <div className="bg-gray-900 text-green-400 font-mono p-4 rounded-lg shadow-md mt-3">
+    <div className="bg-gray-100 text-black p-3 rounded-md font-mono">
       <pre>
 {`let fruits = ["Apple", "Banana", "Cherry"]
 
@@ -38,21 +38,21 @@ for (i, fruit) in fruits.enumerated() {
       </pre>
     </div>
 
-    <p className="text-gray-700 leading-relaxed mt-4">
+    <p className=" leading-relaxed mt-4">
       The <code>enumerated()</code> method provides both the index and the element in the loop.
     </p>
 
     {/* forEach */}
-    <h2 className="text-2xl font-bold text-[#6334B9] mt-6">forEach</h2>
+    <h2 className="text-2xl font-bold  mt-6">forEach</h2>
 
-    <p className="text-gray-700 leading-relaxed mt-3">
+    <p className=" leading-relaxed mt-3">
       Use <code>forEach</code> for a functional-style loop. Note that it cannot use{" "}
       <code>break</code> or <code>continue</code>.
     </p>
 
-    <h3 className="text-xl font-bold text-gray-800 mt-4">Example</h3>
+    <h3 className="text-xl font-bold  mt-4">Example</h3>
 
-    <div className="bg-gray-900 text-green-400 font-mono p-4 rounded-lg shadow-md mt-3">
+    <div className="bg-gray-100 text-black p-3 rounded-md font-mono">
       <pre>
 {`let fruits = ["Apple", "Banana", "Cherry"]
 

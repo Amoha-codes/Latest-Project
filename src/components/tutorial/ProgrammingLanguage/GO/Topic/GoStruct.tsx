@@ -1,32 +1,32 @@
 import React from "react";
 
 const GoStruct: React.FC = () => (
-  <div className="mt-20 px-6">
+  <>
     {/* Title */}
-    <h1 className="text-4xl font-extrabold text-gray-900 border-b-2 pb-2">
+    <h1 className="text-4xl font-extrabold  border-b-2 pb-2 mt-17">
       Go Structures (Struct)
     </h1>
 
     {/* Introduction */}
-    <p className="text-lg text-gray-700 mt-4 leading-relaxed">
+    <p className="text-lg  mt-4 leading-relaxed">
       A <code>struct</code> (short for <strong>structure</strong>) in Go is used to
       group together variables (called <strong>members</strong>) of different data
       types under a single name. While arrays hold multiple values of the same type,
       structs hold values of <strong>different types</strong>.
     </p>
 
-    <p className="text-gray-700 mt-2 leading-relaxed">
+    <p className=" mt-2 leading-relaxed">
       Structs are useful for <strong>grouping related data</strong> into a single record.
     </p>
 
     {/* Declare a Struct */}
-    <h2 className="text-2xl font-bold text-gray-800 mt-8">Declare a Struct</h2>
-    <p className="text-gray-700 mt-2">
+    <h2 className="text-2xl font-bold  mt-8">Declare a Struct</h2>
+    <p className=" mt-2">
       To declare a struct in Go, use the <code>type</code> and <code>struct</code> keywords.
     </p>
 
-    <h3 className="text-xl font-semibold text-gray-800 mt-3">Syntax</h3>
-    <pre className="bg-gray-900 text-white p-4 rounded-lg mt-2 overflow-x-auto">
+    <h3 className="text-xl font-semibold  mt-3">Syntax</h3>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`type struct_name struct {
   member1 datatype
   member2 datatype
@@ -36,13 +36,13 @@ const GoStruct: React.FC = () => (
     </pre>
 
     {/* Example 1 */}
-    <h3 className="text-xl font-semibold text-gray-800 mt-4">Example</h3>
-    <p className="text-gray-700 mt-2">
+    <h3 className="text-xl font-semibold  mt-4">Example</h3>
+    <p className=" mt-2">
       Here we declare a struct type <code>Person</code> with the following members:
       <strong> name</strong>, <strong>age</strong>, <strong>job</strong>, and <strong>salary</strong>.
     </p>
 
-    <pre className="bg-gray-900 text-white p-4 rounded-lg mt-2 overflow-x-auto">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`type Person struct {
   name string
   age int
@@ -51,19 +51,19 @@ const GoStruct: React.FC = () => (
 }`}
     </pre>
 
-    <p className="text-gray-700 mt-2">
+    <p className=" mt-2">
       Notice that <code>name</code> and <code>job</code> are of type <code>string</code>,
       while <code>age</code> and <code>salary</code> are of type <code>int</code>.
     </p>
 
     {/* Access Struct Members */}
-    <h2 className="text-2xl font-bold text-gray-800 mt-8">Access Struct Members</h2>
-    <p className="text-gray-700 mt-2">
+    <h2 className="text-2xl font-bold  mt-8">Access Struct Members</h2>
+    <p className=" mt-2">
       To access struct members, use the dot operator (<code>.</code>) between the struct
       variable name and the member name.
     </p>
 
-    <pre className="bg-gray-900 text-white p-4 rounded-lg mt-3 overflow-x-auto">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -104,8 +104,8 @@ func main() {
 }`}
     </pre>
 
-    <h3 className="text-lg font-semibold text-gray-800 mt-3">Result:</h3>
-    <pre className="bg-gray-100 text-gray-800 p-3 rounded-lg mt-2">
+    <h3 className="text-lg font-semibold  mt-3">Result:</h3>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 Name: Hege
 Age: 45
 Job: Teacher
@@ -117,12 +117,12 @@ Salary: 4500
     </pre>
 
     {/* Pass Struct as Function Arguments */}
-    <h2 className="text-2xl font-bold text-gray-800 mt-8">Pass Struct as Function Arguments</h2>
-    <p className="text-gray-700 mt-2">
+    <h2 className="text-2xl font-bold  mt-8">Pass Struct as Function Arguments</h2>
+    <p className=" mt-2">
       You can also pass a struct as a function argument to make your code more modular and reusable.
     </p>
 
-    <pre className="bg-gray-900 text-white p-4 rounded-lg mt-3 overflow-x-auto">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -164,8 +164,8 @@ func printPerson(pers Person) {
 }`}
     </pre>
 
-    <h3 className="text-lg font-semibold text-gray-800 mt-3">Result:</h3>
-    <pre className="bg-gray-100 text-gray-800 p-3 rounded-lg mt-2">
+    <h3 className="text-lg font-semibold  mt-3">Result:</h3>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 Name: Hege
 Age: 45
 Job: Teacher
@@ -175,7 +175,7 @@ Age: 24
 Job: Marketing
 Salary: 4500
     </pre>
-  </div>
+  </>
 );
 
 export default GoStruct;

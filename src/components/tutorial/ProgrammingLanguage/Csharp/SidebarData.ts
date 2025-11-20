@@ -30,7 +30,7 @@ export const sidebarItems: SidebarItem[] = [
       { title: "Constants", component: "constants" },
       { title: "Display Variables", component: "displayvariables" },
       { title: "Multiple Variables", component: "multiplevariables" },
-      { title: "Identifiers", component: "identifiers" },
+  
     ],
   },
   { title: "C# Data Types", component: "datatypes" },

@@ -2,15 +2,15 @@ import React from "react";
 
 const CsharpSpecialCharacters: React.FC = () => (
   <div className="mt-20 px-6">
-    <h1 className="text-4xl font-extrabold text-gray-900 border-b-2 pb-2">
+    <h1 className="text-4xl font-extrabold  border-b-2 pb-2">
       C# Special Characters
     </h1>
 
-    <p className="text-lg text-gray-700 leading-relaxed mt-4">
+    <p className="text-lg  leading-relaxed mt-4">
       Because strings must be written within quotes, C# may misunderstand certain strings and generate an error. For example:
     </p>
 
-    <pre className="bg-gray-100 p-4 rounded-lg mt-2 text-sm">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
       <code>{`string txt = "We are the so-called "Vikings" from the north.";`}</code>
     </pre>
 
@@ -19,7 +19,7 @@ const CsharpSpecialCharacters: React.FC = () => (
     </p>
 
     <h2 className="text-2xl font-bold mt-6">Common Escape Characters</h2>
-    <table className="table-auto border-collapse border border-gray-300 mt-2 text-left text-lg text-gray-700">
+    <table className="table-auto border-collapse border border-gray-300 mt-2 text-left text-lg ">
       <thead>
         <tr>
           <th className="border border-gray-300 px-4 py-2">Escape character</th>
@@ -48,29 +48,29 @@ const CsharpSpecialCharacters: React.FC = () => (
 
     <h2 className="text-2xl font-bold mt-6">Examples</h2>
 
-    <p className="text-lg text-gray-700 mt-2">
+    <p className="text-lg  mt-2">
       Insert a double quote in a string:
     </p>
-    <pre className="bg-gray-100 p-4 rounded-lg mt-2 text-sm">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
       <code>{`string txt = "We are the so-called \"Vikings\" from the north.";`}</code>
     </pre>
 
-    <p className="text-lg text-gray-700 mt-2">
+    <p className="text-lg mt-2">
       Insert a single quote in a string:
     </p>
-    <pre className="bg-gray-100 p-4 rounded-lg mt-2 text-sm">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
       <code>{`string txt = "It\'s alright.";`}</code>
     </pre>
 
-    <p className="text-lg text-gray-700 mt-2">
+    <p className="text-lg  mt-2">
       Insert a backslash in a string:
     </p>
-    <pre className="bg-gray-100 p-4 rounded-lg mt-2 text-sm">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
       <code>{`string txt = "The character \\ is called backslash.";`}</code>
     </pre>
 
     <h2 className="text-2xl font-bold mt-6">Other Useful Escape Characters</h2>
-    <table className="table-auto border-collapse border border-gray-300 mt-2 text-left text-lg text-gray-700">
+    <table className="table-auto border-collapse border border-gray-300 mt-2 text-left text-lg ">
       <thead>
         <tr>
           <th className="border border-gray-300 px-4 py-2">Code</th>

@@ -1,7 +1,7 @@
 import React from "react";
 
 const GoConstants: React.FC = () => (
-  <div className="mt-20 text-gray-800 space-y-6">
+  <div className="mt-17  dark:text-white space-y-6">
     <h1 className="text-4xl font-extrabold border-b-2 pb-2">Go Constants</h1>
 
     <p>
@@ -12,7 +12,7 @@ const GoConstants: React.FC = () => (
     </p>
 
     <h2 className="text-2xl font-bold mt-6">Syntax</h2>
-    <div className="bg-gray-100 p-3 rounded-md font-mono">const CONSTNAME type = value</div>
+    <div className="bg-gray-100 text-black dark:bg-gray-100 dark:text-black p-3 rounded-md font-mono">const CONSTNAME type = value</div>
     <p>
       <b>Note:</b> The value of a constant must be assigned when you declare it.
     </p>
@@ -20,7 +20,7 @@ const GoConstants: React.FC = () => (
     <h2 className="text-2xl font-bold mt-6">Declaring a Constant</h2>
     <p>Here is an example of declaring a constant in Go:</p>
 
-    <div className="bg-gray-100 p-3 rounded-md font-mono">
+    <div className="bg-gray-100 text-black dark:bg-gray-100 dark:text-black p-3 rounded-md font-mono">
       package main
       <br />
       import ("fmt")
@@ -53,7 +53,7 @@ const GoConstants: React.FC = () => (
     <h3 className="text-xl font-semibold mt-4">Typed Constants</h3>
     <p>Typed constants are declared with a defined type:</p>
 
-    <div className="bg-gray-100 p-3 rounded-md font-mono">
+    <div className="bg-gray-100 text-black dark:bg-gray-100 dark:text-black p-3 rounded-md font-mono">
       package main
       <br />
       import ("fmt")
@@ -72,7 +72,7 @@ const GoConstants: React.FC = () => (
     <h3 className="text-xl font-semibold mt-4">Untyped Constants</h3>
     <p>Untyped constants are declared without a type:</p>
 
-    <div className="bg-gray-100 p-3 rounded-md font-mono">
+    <div className="bg-gray-100 text-black dark:bg-gray-100 dark:text-black p-3 rounded-md font-mono">
       package main
       <br />
       import ("fmt")
@@ -98,7 +98,7 @@ const GoConstants: React.FC = () => (
       When a constant is declared, it is not possible to change its value later:
     </p>
 
-    <div className="bg-gray-100 p-3 rounded-md font-mono">
+    <div className="bg-gray-100 text-black dark:bg-gray-100 dark:text-black p-3 rounded-md font-mono">
       package main
       <br />
       import ("fmt")
@@ -122,7 +122,7 @@ const GoConstants: React.FC = () => (
     <h2 className="text-2xl font-bold mt-6">Multiple Constants Declaration</h2>
     <p>Multiple constants can be grouped together into a block for better readability:</p>
 
-    <div className="bg-gray-100 p-3 rounded-md font-mono">
+    <div className="bg-gray-100 text-black dark:bg-gray-100 dark:text-black p-3 rounded-md font-mono">
       package main
       <br />
       import ("fmt")

@@ -1,14 +1,14 @@
 import React from "react";
 
 const GoSinglecase: React.FC = () => (
-  <div className="mt-20 px-6">
+  <>
     {/* Main Heading */}
-    <h1 className="text-4xl font-extrabold text-gray-900 border-b-2 pb-2">
+    <h1 className="text-4xl font-extrabold  border-b-2 pb-2 mt-20">
       Go switch Statement
     </h1>
 
     {/* Intro Paragraph */}
-    <p className="text-lg text-gray-700 mt-4 leading-relaxed">
+    <p className="text-lg  mt-4 leading-relaxed">
       The <code>switch</code> statement in Go is used to select one of many code blocks to
       be executed. It works similarly to the switch statements in languages like C, C++, 
       Java, JavaScript, and PHP — but with one key difference: Go automatically breaks 
@@ -16,11 +16,11 @@ const GoSinglecase: React.FC = () => (
     </p>
 
     {/* Single-Case Switch Syntax */}
-    <h2 className="text-2xl font-bold text-gray-800 mt-6">
+    <h2 className="text-2xl font-bold  mt-6">
       Single-Case switch Syntax
     </h2>
 
-    <pre className="bg-gray-900 text-white p-4 rounded-lg mt-3 overflow-x-auto">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`switch expression {
 case x:
    // code block
@@ -34,10 +34,10 @@ default:
     </pre>
 
     {/* Explanation */}
-    <p className="text-gray-700 mt-3 leading-relaxed">
+    <p className=" mt-3 leading-relaxed">
       Here's how it works:
     </p>
-    <ul className="list-disc ml-6 text-gray-700 leading-relaxed">
+    <ul className="list-disc ml-6  leading-relaxed">
       <li>The expression is evaluated once.</li>
       <li>The value of the switch expression is compared with each case.</li>
       <li>If a match is found, the associated block of code runs.</li>
@@ -45,14 +45,14 @@ default:
     </ul>
 
     {/* Example 1 */}
-    <h2 className="text-2xl font-bold text-gray-800 mt-6">
+    <h2 className="text-2xl font-bold  mt-6">
       Single-Case switch Example
     </h2>
-    <p className="text-gray-700 mt-2 leading-relaxed">
+    <p className=" mt-2 leading-relaxed">
       The example below uses a weekday number to print the corresponding weekday name:
     </p>
 
-    <pre className="bg-gray-900 text-white p-4 rounded-lg mt-3 overflow-x-auto">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -79,17 +79,17 @@ func main() {
     </pre>
 
     {/* Result */}
-    <h3 className="text-lg font-semibold text-gray-800 mt-3">Result:</h3>
-    <pre className="bg-gray-100 text-gray-800 p-3 rounded-lg mt-2">Thursday</pre>
+    <h3 className="text-lg font-semibold  mt-3">Result:</h3>
+    <pre className="bg-gray-100  p-3 rounded-lg mt-2">Thursday</pre>
 
     {/* Default Keyword Section */}
-    <h2 className="text-2xl font-bold text-gray-800 mt-6">The default Keyword</h2>
-    <p className="text-gray-700 mt-2 leading-relaxed">
+    <h2 className="text-2xl font-bold  mt-6">The default Keyword</h2>
+    <p className=" mt-2 leading-relaxed">
       The <code>default</code> keyword specifies code to run if there is no case match.
     </p>
 
     {/* Example 2 */}
-    <pre className="bg-gray-900 text-white p-4 rounded-lg mt-3 overflow-x-auto">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -118,16 +118,16 @@ func main() {
     </pre>
 
     {/* Result */}
-    <h3 className="text-lg font-semibold text-gray-800 mt-3">Result:</h3>
-    <pre className="bg-gray-100 text-gray-800 p-3 rounded-lg mt-2">Not a weekday</pre>
+    <h3 className="text-lg font-semibold  mt-3">Result:</h3>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">Not a weekday</pre>
 
     {/* Summary */}
-    <p className="text-gray-700 mt-3 leading-relaxed">
+    <p className=" mt-3 leading-relaxed">
       In Go, the <code>switch</code> statement simplifies multi-condition checks and
       automatically stops after finding a matching case — making it cleaner and more
       efficient than multiple <code>if-else</code> statements.
     </p>
-  </div>
+  </>
 );
 
 export default GoSinglecase;

@@ -15,8 +15,8 @@ export interface TopicContent {
 }
 // Main structure of the sidebar navigation
 export const tutorialData: SidebarItem[] = [
-  { label: "Typescript home", href: "cpp_home.asp" },
-  { label: "Typescript Intro", href: "cpp_intro.asp" },
+  { label: "Javascript home", href: "cpp_home.asp" },
+  { label: "Javascript Intro", href: "cpp_intro.asp" },
   { label: "javascript Get Started", href: "cpp_get_started.asp" },
   {
     label: "javascript Syntax",

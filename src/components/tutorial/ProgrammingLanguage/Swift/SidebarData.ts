@@ -33,7 +33,7 @@ export const sidebarItems: SidebarItem[] = [
       { title: "Constants", component: "constants" },
     ],
   },
-  { title: "Swift Constants", component: "constants" },
+  { title: "Swift Constants", component: "swiftconstant" },
     {
     title: "Swift Output",
     component: "output",

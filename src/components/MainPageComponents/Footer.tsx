@@ -106,7 +106,7 @@ const Footer: React.FC<FooterProps> = ({ darkMode }) => {
               href="https://www.linkedin.com/in/vasugoswami25/"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-semibold text-white hover:underline hover:text-[#6334B9] transition-colors"
+              className="font-semibold text-white hover:underline hover:text-purple-300 transition-colors"
             >
               Vasu Goswami
             </a>
@@ -115,7 +115,7 @@ const Footer: React.FC<FooterProps> = ({ darkMode }) => {
               href="https://www.linkedin.com/in/sakshi-sharma-87b247297/"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-semibold text-white hover:underline hover:text-[#6334B9] transition-colors"
+              className="font-semibold text-white hover:underline hover:text-purple-300 transition-colors"
             >
               Sakshi Sharma
             </a>

@@ -56,7 +56,7 @@ const PracticePage = () => {
       problemsText: 'Problems',
       level: 'Beginner to Advanced',
       completed: false,
-      url: '/python',
+      url: '/pythonTutorial',
       icon: 'python'
     },
     {
@@ -136,7 +136,7 @@ const PracticePage = () => {
       problemsText: 'Problems',
       level: 'Beginner to Advanced',
       completed: false,
-     url: '/Typescript',
+     url: '/TypescriptTutorial',
       icon: 'typescript'
     },
     {
@@ -146,7 +146,7 @@ const PracticePage = () => {
       problemsText: 'Problems',
       level: 'Beginner to Advanced',
       completed: false,
-     url: '/JS',
+     url: '/JSTutorial',
       icon: 'javascript'
     }
   ];

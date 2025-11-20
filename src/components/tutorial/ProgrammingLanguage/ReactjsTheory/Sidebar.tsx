@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ChevronDown, ChevronRight } from "lucide-react";
 // Import path is modified to be relative to where the component is used, or simply use types in the same file
-import type { SidebarItem } from "../../../data/tutorial/ReactjsTheory/reactjsData"; // Assuming new path
+import type { SidebarItem } from "../../../../data/tutorial/ReactjsTheory/reactjsData"; // Assuming new path
 
 interface SidebarProps {
   data: SidebarItem[];

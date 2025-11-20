@@ -1,25 +1,25 @@
 import React from "react";
 
 const GoMaps: React.FC = () => (
-  <div className="mt-20 w-full max-w-5xl mx-auto px-6">
-    <h1 className="text-4xl font-extrabold text-gray-900 border-b-2 pb-2">
+  <>
+    <h1 className="text-4xl font-extrabold  border-b-2 pb-2 mt-17">
       Go Maps
     </h1>
 
-    <p className="text-lg text-gray-700 mt-4 leading-relaxed">
+    <p className="text-lg  mt-4 leading-relaxed">
       Maps are used to store data values in <b>key:value</b> pairs. Each element in a map is a key:value pair. 
       A map is an unordered and changeable collection that does not allow duplicates. The length of a map is 
       the number of its elements, found using the <code>len()</code> function. The default value of a map is 
       <code>nil</code>. Maps hold references to an underlying hash table.
     </p>
 
-    <h2 className="text-2xl font-bold text-gray-800 mt-8">Create Maps Using var and :=</h2>
-    <pre className="bg-gray-100 p-4 rounded-lg mt-3 overflow-x-auto">
+    <h2 className="text-2xl font-bold  mt-8">Create Maps Using var and :=</h2>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`var a = map[KeyType]ValueType{key1:value1, key2:value2,...}
 b := map[KeyType]ValueType{key1:value1, key2:value2,...}`}
     </pre>
 
-    <h3 className="text-xl font-semibold text-gray-800 mt-4">Example:</h3>
+    <h3 className="text-xl font-semibold  mt-4">Example:</h3>
     <pre className="bg-gray-100 p-4 rounded-lg mt-2 overflow-x-auto">
 {`package main
 import ("fmt")
@@ -33,19 +33,19 @@ func main() {
 }`}
     </pre>
 
-    <p className="mt-3 text-gray-700">Result:</p>
-    <pre className="bg-gray-50 p-4 rounded-lg mt-2 overflow-x-auto">
+    <p className="mt-3 ">Result:</p>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono mt-2 overflow-x-auto">
 {`a   map[brand:Ford model:Mustang year:1964]
 b   map[Bergen:2 Oslo:1 Stavanger:4 Trondheim:3]`}
     </pre>
 
-    <h2 className="text-2xl font-bold text-gray-800 mt-8">Create Maps Using the make() Function</h2>
-    <pre className="bg-gray-100 p-4 rounded-lg mt-3 overflow-x-auto">
+    <h2 className="text-2xl font-bold  mt-8">Create Maps Using the make() Function</h2>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`var a = make(map[KeyType]ValueType)
 b := make(map[KeyType]ValueType)`}
     </pre>
 
-    <pre className="bg-gray-100 p-4 rounded-lg mt-3 overflow-x-auto">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -66,8 +66,8 @@ func main() {
 }`}
     </pre>
 
-    <h2 className="text-2xl font-bold text-gray-800 mt-8">Create an Empty Map</h2>
-    <pre className="bg-gray-100 p-4 rounded-lg mt-3 overflow-x-auto">
+    <h2 className="text-2xl font-bold  mt-8">Create an Empty Map</h2>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`var a = make(map[string]string)
 var b map[string]string
 
@@ -75,18 +75,18 @@ fmt.Println(a == nil)
 fmt.Println(b == nil)`}
     </pre>
 
-    <p className="text-gray-700 mt-3">Result:</p>
-    <pre className="bg-gray-50 p-4 rounded-lg">
+    <p className=" mt-3">Result:</p>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`false
 true`}
     </pre>
 
-    <h2 className="text-2xl font-bold text-gray-800 mt-8">Access Map Elements</h2>
-    <pre className="bg-gray-100 p-4 rounded-lg mt-3 overflow-x-auto">
+    <h2 className="text-2xl font-bold  mt-8">Access Map Elements</h2>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`value = map_name[key]`}
     </pre>
 
-    <pre className="bg-gray-100 p-4 rounded-lg mt-3 overflow-x-auto">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -100,15 +100,15 @@ func main() {
 }`}
     </pre>
 
-    <p className="mt-3 text-gray-700">Result:</p>
-    <pre className="bg-gray-50 p-4 rounded-lg">Ford</pre>
+    <p className="mt-3 ">Result:</p>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">Ford</pre>
 
-    <h2 className="text-2xl font-bold text-gray-800 mt-8">Update and Add Map Elements</h2>
-    <pre className="bg-gray-100 p-4 rounded-lg mt-3 overflow-x-auto">
+    <h2 className="text-2xl font-bold  mt-8">Update and Add Map Elements</h2>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`map_name[key] = value`}
     </pre>
 
-    <pre className="bg-gray-100 p-4 rounded-lg mt-3 overflow-x-auto">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -127,12 +127,12 @@ func main() {
 }`}
     </pre>
 
-    <h2 className="text-2xl font-bold text-gray-800 mt-8">Remove Element from Map</h2>
-    <pre className="bg-gray-100 p-4 rounded-lg mt-3 overflow-x-auto">
+    <h2 className="text-2xl font-bold  mt-8">Remove Element from Map</h2>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`delete(map_name, key)`}
     </pre>
 
-    <pre className="bg-gray-100 p-4 rounded-lg mt-3 overflow-x-auto">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -150,12 +150,12 @@ func main() {
 }`}
     </pre>
 
-    <h2 className="text-2xl font-bold text-gray-800 mt-8">Check For Specific Elements in a Map</h2>
-    <pre className="bg-gray-100 p-4 rounded-lg mt-3 overflow-x-auto">
+    <h2 className="text-2xl font-bold  mt-8">Check For Specific Elements in a Map</h2>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`val, ok := map_name[key]`}
     </pre>
 
-    <pre className="bg-gray-100 p-4 rounded-lg mt-3 overflow-x-auto">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -174,8 +174,8 @@ func main() {
 }`}
     </pre>
 
-    <h2 className="text-2xl font-bold text-gray-800 mt-8">Maps Are References</h2>
-    <pre className="bg-gray-100 p-4 rounded-lg mt-3 overflow-x-auto">
+    <h2 className="text-2xl font-bold  mt-8">Maps Are References</h2>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -193,8 +193,8 @@ func main() {
 }`}
     </pre>
 
-    <h2 className="text-2xl font-bold text-gray-800 mt-8">Iterate Over Maps</h2>
-    <pre className="bg-gray-100 p-4 rounded-lg mt-3 overflow-x-auto">
+    <h2 className="text-2xl font-bold  mt-8">Iterate Over Maps</h2>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -207,13 +207,13 @@ func main() {
 }`}
     </pre>
 
-    <p className="mt-3 text-gray-700">Result:</p>
-    <pre className="bg-gray-50 p-4 rounded-lg">
+    <p className="mt-3 ">Result:</p>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`two : 2, three : 3, four : 4, one : 1,`}
     </pre>
 
-    <h2 className="text-2xl font-bold text-gray-800 mt-8">Iterate Over Maps in a Specific Order</h2>
-    <pre className="bg-gray-100 p-4 rounded-lg mt-3 overflow-x-auto">
+    <h2 className="text-2xl font-bold  mt-8">Iterate Over Maps in a Specific Order</h2>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -234,7 +234,7 @@ func main() {
   }
 }`}
     </pre>
-  </div>
+  </>
 );
 
 export default GoMaps;

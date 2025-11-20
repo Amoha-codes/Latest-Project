@@ -1,7 +1,7 @@
 import React from "react";
 
 const GoNamingRules: React.FC = () => (
-  <div className="mt-20 text-gray-800 space-y-6">
+  <div className="mt-17  dark:text-white space-y-6">
     <h1 className="text-4xl font-extrabold border-b-2 pb-2">
       Go Variable Naming Rules
     </h1>
@@ -37,7 +37,7 @@ const GoNamingRules: React.FC = () => (
     <p>
       Each word, except the first, starts with a capital letter.
     </p>
-    <div className="bg-gray-100 p-3 rounded-md font-mono">
+    <div className="bg-gray-100 text-black dark:bg-gray-100 dark:text-black p-3 rounded-md font-mono">
       myVariableName = "John"
     </div>
 
@@ -45,7 +45,7 @@ const GoNamingRules: React.FC = () => (
     <p>
       Each word starts with a capital letter.
     </p>
-    <div className="bg-gray-100 p-3 rounded-md font-mono">
+    <div className="bg-gray-100 text-black dark:bg-gray-100 dark:text-black p-3 rounded-md font-mono">
       MyVariableName = "John"
     </div>
 
@@ -53,7 +53,7 @@ const GoNamingRules: React.FC = () => (
     <p>
       Each word is separated by an underscore character.
     </p>
-    <div className="bg-gray-100 p-3 rounded-md font-mono">
+    <div className="bg-gray-100 text-black dark:bg-gray-100 dark:text-black p-3 rounded-md font-mono">
       my_variable_name = "John"
     </div>
   </div>

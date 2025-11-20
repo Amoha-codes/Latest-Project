@@ -1,7 +1,7 @@
 import React from "react";
 
 const GoComments: React.FC = () => (
-  <div className="mt-20 text-gray-800 space-y-6">
+  <div className="mt-17  dark:text-white space-y-6">
     <h1 className="text-4xl font-extrabold border-b-2 pb-2">Go Comments</h1>
 
     <p>
@@ -22,7 +22,7 @@ const GoComments: React.FC = () => (
     </p>
 
     <h2 className="text-2xl font-bold mt-6">Example</h2>
-    <div className="bg-gray-100 p-3 rounded-md font-mono">
+    <div className="bg-gray-100 text-black p-3 rounded-md font-mono">
       // This is a comment
       <br />
       package main
@@ -42,7 +42,7 @@ const GoComments: React.FC = () => (
     <p>The following example uses a single-line comment at the end of a code line:</p>
 
     <h2 className="text-2xl font-bold mt-6">Example</h2>
-    <div className="bg-gray-100 p-3 rounded-md font-mono">
+    <div className="bg-gray-100 text-black p-3 rounded-md font-mono">
       package main
       <br />
       import ("fmt")
@@ -63,7 +63,7 @@ const GoComments: React.FC = () => (
     </p>
 
     <h2 className="text-2xl font-bold mt-6">Example</h2>
-    <div className="bg-gray-100 p-3 rounded-md font-mono">
+    <div className="bg-gray-100 text-black p-3 rounded-md font-mono">
       package main
       <br />
       import ("fmt")
@@ -91,7 +91,7 @@ const GoComments: React.FC = () => (
     </p>
 
     <h2 className="text-2xl font-bold mt-6">Example</h2>
-    <div className="bg-gray-100 p-3 rounded-md font-mono">
+    <div className="bg-gray-100 text-black p-3 rounded-md font-mono">
       package main
       <br />
       import ("fmt")

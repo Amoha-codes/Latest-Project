@@ -84,6 +84,12 @@ import Swift from "./components/tutorial/ProgrammingLanguage/Swift/Swift.tsx";
 import ComputerFundamental from "./components/tutorial/ComputerScienceCoreSubjects/CoreFoundations/ComputerFundamentals/ComputerFundamental.tsx";
 import EngMath from "./components/tutorial/ComputerScienceCoreSubjects/CoreFoundations/EngineeringMathematics/EngMath.tsx";
 import MathCS from "./components/tutorial/ComputerScienceCoreSubjects/CoreFoundations/MathForComputerScience/MathCS.tsx";
+import JSTutorial from "./components/tutorial/ProgrammingLanguage/JSTheory/JSTutorial.tsx";
+import TypescriptTutorial from "./components/tutorial/ProgrammingLanguage/TypescriptTheory/TypescriptTutorial.tsx";
+import Csharp from "./components/tutorial/ProgrammingLanguage/Csharp/Csharp.tsx";
+import JavaTutorial from "./components/tutorial/ProgrammingLanguage/JavaTheory/JavaTutorial.tsx";
+import PythonTutorial from "./components/tutorial/ProgrammingLanguage/PythonTheory/pythonTutorial.tsx";
+
 
 
 
@@ -142,14 +148,22 @@ const App: React.FC = () => {
         <Route path="/tutorial/W3School" element={<W3School/>} />
         
         
-        <Route path="/Go" element={<GO/>} />
-        <Route path="/Kotlin" element={<Kotlin/>} />
-        <Route path="/Swift" element={<Swift/>} />
+       
 
         {/* Computer Science */}
         <Route path="/ComputerFundamentals" element={<ComputerFundamental darkMode={darkMode}/>} />
         <Route path="/EngMath" element={<EngMath darkMode={darkMode}/>} />
         <Route path="/MathsCS" element={<MathCS  />} />
+        <Route path="/JSTutorial" element={<JSTutorial darkMode={darkMode}  />} />
+        <Route path="/TypescriptTutorial" element={<TypescriptTutorial darkMode={darkMode}  />} />
+        <Route path="/Csharp" element={<Csharp darkMode={darkMode} />} />
+        <Route path="/Go" element={<GO darkMode={darkMode}/>} />
+        <Route path="/Kotlin" element={<Kotlin darkMode={darkMode}/>} />
+        <Route path="/Swift" element={<Swift darkMode={darkMode}/>} />
+        <Route path="/CppTutorial" element={<CppTutorial darkMode={darkMode} />} />
+        <Route path="/JavaTutorial" element={<JavaTutorial darkMode={darkMode} />} />
+        <Route path="/pythonTutorial" element={<PythonTutorial darkMode={darkMode} />} />
+        
         {/* <Route path="/OperatingSystemsTutorial" element={<OperatingSystemsTutorial darkMode={darkMode} />} />
         <Route path="/OrganizationTutorial" element={<OrganizationTutorial darkMode={darkMode} />} />
         <Route path="/NetworksTutorial" element={<NetworksTutorial darkMode={darkMode} />} />

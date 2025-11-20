@@ -1,13 +1,13 @@
 import React from "react";
 
 const KotlinIntroduction: React.FC = () => (
-  <div className="mt-20 w-full max-w-5xl mx-auto px-6">
-    <h1 className="text-4xl font-extrabold text-gray-900 border-b-2 pb-2">
+  <div className="mt-20">
+    <h1 className="text-4xl font-extrabold  border-b-2 pb-2">
       Kotlin Introduction
     </h1>
 
-    <h2 className="text-2xl font-bold text-gray-800 mt-8">What is Kotlin?</h2>
-    <p className="text-lg text-gray-700 mt-4 leading-relaxed">
+    <h2 className="text-2xl font-bold  mt-8">What is Kotlin?</h2>
+    <p className="text-lg  mt-4 leading-relaxed">
       <b>Kotlin</b> is a modern, trending programming language that was released
       in <b>2016</b> by <b>JetBrains</b>. It has become very popular because it
       is fully compatible with <b>Java</b> — one of the most widely used
@@ -15,11 +15,11 @@ const KotlinIntroduction: React.FC = () => (
       libraries can be easily used in Kotlin programs.
     </p>
 
-    <p className="text-lg text-gray-700 mt-4 leading-relaxed">
+    <p className="text-lg  mt-4 leading-relaxed">
       Kotlin is a versatile language used for:
     </p>
 
-    <ul className="list-disc list-inside text-gray-700 text-lg mt-2 space-y-1">
+    <ul className="list-disc list-inside  text-lg mt-2 space-y-1">
       <li>Mobile applications (especially Android apps)</li>
       <li>Web development</li>
       <li>Server-side applications</li>
@@ -27,8 +27,8 @@ const KotlinIntroduction: React.FC = () => (
       <li>And much, much more!</li>
     </ul>
 
-    <h2 className="text-2xl font-bold text-gray-800 mt-8">Why Use Kotlin?</h2>
-    <ul className="list-disc list-inside text-gray-700 text-lg mt-3 space-y-1">
+    <h2 className="text-2xl font-bold  mt-8">Why Use Kotlin?</h2>
+    <ul className="list-disc list-inside  text-lg mt-3 space-y-1">
       <li>Kotlin is fully compatible with Java</li>
       <li>Kotlin works on multiple platforms (Windows, Mac, Linux, Raspberry Pi, etc.)</li>
       <li>Kotlin is concise and safe</li>
@@ -37,8 +37,8 @@ const KotlinIntroduction: React.FC = () => (
       <li>It has a large and active community for support</li>
     </ul>
 
-    <h2 className="text-2xl font-bold text-gray-800 mt-8">Get Started</h2>
-    <p className="text-lg text-gray-700 mt-4 leading-relaxed">
+    <h2 className="text-2xl font-bold  mt-8">Get Started</h2>
+    <p className="text-lg  mt-4 leading-relaxed">
       This tutorial will teach you the very basics of Kotlin. It is not
       necessary to have any prior programming experience — the lessons will
       guide you step by step to help you get comfortable with the Kotlin

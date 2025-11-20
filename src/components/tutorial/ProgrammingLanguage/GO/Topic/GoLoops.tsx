@@ -1,9 +1,9 @@
 import React from "react";
 
 const GoLoops: React.FC = () => (
-  <div className="mt-20 px-6">
+  <>
     {/* Main Heading */}
-    <h1 className="text-4xl font-extrabold text-gray-900 border-b-2 pb-2">
+    <h1 className="text-4xl font-extrabold  border-b-2 pb-2 mt-17">
       Go For Loops
     </h1>
 
@@ -13,15 +13,15 @@ const GoLoops: React.FC = () => (
       specified number of times. It’s the <strong>only loop</strong> available in Go.
     </p>
 
-    <h2 className="text-2xl font-bold text-gray-800 mt-6">Go for Loop</h2>
+    <h2 className="text-2xl font-bold  mt-6">Go for Loop</h2>
     <p className="text-gray-700 mt-2 leading-relaxed">
       Loops are useful when you need to run the same code multiple times, each with a
       different value. Each run of the loop is called an <strong>iteration</strong>.
     </p>
 
     {/* Syntax */}
-    <h3 className="text-xl font-semibold text-gray-800 mt-4">Syntax</h3>
-    <pre className="bg-gray-900 text-white p-4 rounded-lg mt-2 overflow-x-auto">
+    <h3 className="text-xl font-semibold  mt-4">Syntax</h3>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`for statement1; statement2; statement3 {
    // code to be executed for each iteration
 }`}
@@ -34,9 +34,9 @@ const GoLoops: React.FC = () => (
     </ul>
 
     {/* Example 1 */}
-    <h2 className="text-2xl font-bold text-gray-800 mt-8">Example 1</h2>
+    <h2 className="text-2xl font-bold  mt-8">Example 1</h2>
     <p className="text-gray-700 mt-2">This example prints numbers from 0 to 4:</p>
-    <pre className="bg-gray-900 text-white p-4 rounded-lg mt-3 overflow-x-auto">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -46,8 +46,8 @@ func main() {
   }
 }`}
     </pre>
-    <h3 className="text-lg font-semibold text-gray-800 mt-3">Result:</h3>
-    <pre className="bg-gray-100 text-gray-800 p-3 rounded-lg mt-2">
+    <h3 className="text-lg font-semibold  mt-3">Result:</h3>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 0
 1
 2
@@ -62,9 +62,9 @@ func main() {
     </ul>
 
     {/* Example 2 */}
-    <h2 className="text-2xl font-bold text-gray-800 mt-8">Example 2</h2>
+    <h2 className="text-2xl font-bold  mt-8">Example 2</h2>
     <p className="text-gray-700 mt-2">This example counts to 100 by tens:</p>
-    <pre className="bg-gray-900 text-white p-4 rounded-lg mt-3 overflow-x-auto">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -74,8 +74,8 @@ func main() {
   }
 }`}
     </pre>
-    <h3 className="text-lg font-semibold text-gray-800 mt-3">Result:</h3>
-    <pre className="bg-gray-100 text-gray-800 p-3 rounded-lg mt-2">
+    <h3 className="text-lg font-semibold  mt-3">Result:</h3>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 0
 10
 20
@@ -90,11 +90,11 @@ func main() {
     </pre>
 
     {/* Continue Statement */}
-    <h2 className="text-2xl font-bold text-gray-800 mt-8">The continue Statement</h2>
+    <h2 className="text-2xl font-bold  mt-8">The continue Statement</h2>
     <p className="text-gray-700 mt-2">
       The <code>continue</code> statement skips the current iteration and moves to the next one.
     </p>
-    <pre className="bg-gray-900 text-white p-4 rounded-lg mt-3 overflow-x-auto">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -107,8 +107,8 @@ func main() {
   }
 }`}
     </pre>
-    <h3 className="text-lg font-semibold text-gray-800 mt-3">Result:</h3>
-    <pre className="bg-gray-100 text-gray-800 p-3 rounded-lg mt-2">
+    <h3 className="text-lg font-semibold  mt-3">Result:</h3>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 0
 1
 2
@@ -116,11 +116,11 @@ func main() {
     </pre>
 
     {/* Break Statement */}
-    <h2 className="text-2xl font-bold text-gray-800 mt-8">The break Statement</h2>
+    <h2 className="text-2xl font-bold  mt-8">The break Statement</h2>
     <p className="text-gray-700 mt-2">
       The <code>break</code> statement stops the loop when a specific condition is met.
     </p>
-    <pre className="bg-gray-900 text-white p-4 rounded-lg mt-3 overflow-x-auto">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -133,19 +133,19 @@ func main() {
   }
 }`}
     </pre>
-    <h3 className="text-lg font-semibold text-gray-800 mt-3">Result:</h3>
-    <pre className="bg-gray-100 text-gray-800 p-3 rounded-lg mt-2">
+    <h3 className="text-lg font-semibold  mt-3">Result:</h3>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 0
 1
 2
     </pre>
 
     {/* Nested Loops */}
-    <h2 className="text-2xl font-bold text-gray-800 mt-8">Nested Loops</h2>
+    <h2 className="text-2xl font-bold  mt-8">Nested Loops</h2>
     <p className="text-gray-700 mt-2">
       You can use loops inside other loops. The inner loop runs once for each outer loop iteration.
     </p>
-    <pre className="bg-gray-900 text-white p-4 rounded-lg mt-3 overflow-x-auto">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -160,8 +160,8 @@ func main() {
   }
 }`}
     </pre>
-    <h3 className="text-lg font-semibold text-gray-800 mt-3">Result:</h3>
-    <pre className="bg-gray-100 text-gray-800 p-3 rounded-lg mt-2">
+    <h3 className="text-lg font-semibold  mt-3">Result:</h3>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 big apple
 big orange
 big banana
@@ -171,22 +171,22 @@ tasty banana
     </pre>
 
     {/* Range Keyword */}
-    <h2 className="text-2xl font-bold text-gray-800 mt-8">The Range Keyword</h2>
+    <h2 className="text-2xl font-bold  mt-8">The Range Keyword</h2>
     <p className="text-gray-700 mt-2 leading-relaxed">
       The <code>range</code> keyword simplifies iterating over elements in an array, slice, or map.
       It returns both the index and the value.
     </p>
 
-    <h3 className="text-xl font-semibold text-gray-800 mt-3">Syntax</h3>
-    <pre className="bg-gray-900 text-white p-4 rounded-lg mt-2 overflow-x-auto">
+    <h3 className="text-xl font-semibold  mt-3">Syntax</h3>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`for index, value := range array|slice|map {
    // code to be executed for each iteration
 }`}
     </pre>
 
     {/* Range Example 1 */}
-    <h3 className="text-xl font-semibold text-gray-800 mt-4">Example 1</h3>
-    <pre className="bg-gray-900 text-white p-4 rounded-lg mt-3 overflow-x-auto">
+    <h3 className="text-xl font-semibold  mt-4">Example 1</h3>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -198,16 +198,16 @@ func main() {
   }
 }`}
     </pre>
-    <h3 className="text-lg font-semibold text-gray-800 mt-3">Result:</h3>
-    <pre className="bg-gray-100 text-gray-800 p-3 rounded-lg mt-2">
+    <h3 className="text-lg font-semibold  mt-3">Result:</h3>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 0   apple
 1   orange
 2   banana
     </pre>
 
     {/* Range Example 2 */}
-    <h3 className="text-xl font-semibold text-gray-800 mt-4">Example 2 - Omit Index</h3>
-    <pre className="bg-gray-900 text-white p-4 rounded-lg mt-3 overflow-x-auto">
+    <h3 className="text-xl font-semibold  mt-4">Example 2 - Omit Index</h3>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -219,16 +219,16 @@ func main() {
   }
 }`}
     </pre>
-    <h3 className="text-lg font-semibold text-gray-800 mt-3">Result:</h3>
-    <pre className="bg-gray-100 text-gray-800 p-3 rounded-lg mt-2">
+    <h3 className="text-lg font-semibold  mt-3">Result:</h3>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 apple
 orange
 banana
     </pre>
 
     {/* Range Example 3 */}
-    <h3 className="text-xl font-semibold text-gray-800 mt-4">Example 3 - Omit Value</h3>
-    <pre className="bg-gray-900 text-white p-4 rounded-lg mt-3 overflow-x-auto">
+    <h3 className="text-xl font-semibold  mt-4">Example 3 - Omit Value</h3>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -240,13 +240,13 @@ func main() {
   }
 }`}
     </pre>
-    <h3 className="text-lg font-semibold text-gray-800 mt-3">Result:</h3>
-    <pre className="bg-gray-100 text-gray-800 p-3 rounded-lg mt-2">
+    <h3 className="text-lg font-semibold  mt-3">Result:</h3>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 0
 1
 2
     </pre>
-  </div>
+  </>
 );
 
 export default GoLoops;

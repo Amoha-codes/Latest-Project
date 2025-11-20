@@ -1,40 +1,40 @@
 import React from "react";
 
 const GoInteger: React.FC = () => (
-  <div className="mt-20 p-8 space-y-6 bg-white rounded-xl shadow-lg text-black">
+  <>
     
     {/* Main Heading */}
-    <h1 className="text-4xl font-extrabold text-gray-900 border-b-2 pb-2">
+    <h1 className="text-4xl font-extrabold  border-b-2 pb-2 mt-17">
       Go Integer Data Types
     </h1>
 
     {/* Introduction */}
-    <p className="text-lg text-gray-700 leading-relaxed">
+    <p className="text-lg  leading-relaxed mt-10">
       Integer data types are used to store a whole number without decimals, like <code>35</code>, <code>-50</code>, or <code>1345000</code>.
     </p>
 
-    <p className="text-lg text-gray-700 leading-relaxed">
+    <p className="text-lg  leading-relaxed">
       The integer data type has two categories:
     </p>
 
-    <ul className="list-disc ml-6 space-y-1 text-gray-700">
+    <ul className="list-disc ml-6 space-y-1 ">
       <li><strong>Signed integers</strong> – can store both positive and negative values</li>
       <li><strong>Unsigned integers</strong> – can only store non-negative values</li>
     </ul>
 
-    <p className="text-lg text-gray-700 leading-relaxed">
+    <p className="text-lg  leading-relaxed">
       <strong>Tip:</strong> The default type for integer is <code>int</code>. If you do not specify a type, the type will be <code>int</code>.
     </p>
 
     {/* Signed Integers Section */}
-    <h2 className="text-3xl font-bold text-gray-900 mt-8">Signed Integers</h2>
+    <h2 className="text-3xl font-bold  mt-8">Signed Integers</h2>
 
-    <p className="text-lg text-gray-700 leading-relaxed">
+    <p className="text-lg  leading-relaxed">
       Signed integers, declared with one of the <code>int</code> keywords, can store both positive and negative values.
     </p>
 
-    <h3 className="text-2xl font-semibold text-gray-800 mt-4">Example</h3>
-    <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-x-auto">
+    <h3 className="text-2xl font-semibold  mt-4">Example</h3>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -47,7 +47,7 @@ func main() {
     </pre>
 
     {/* Signed Integer Table */}
-    <h3 className="text-2xl font-semibold text-gray-800 mt-6">Signed Integer Types</h3>
+    <h3 className="text-2xl font-semibold  mt-6">Signed Integer Types</h3>
     <div className="overflow-x-auto">
       <table className="table-auto border-collapse w-full text-left">
         <thead>
@@ -92,14 +92,14 @@ func main() {
     </div>
 
     {/* Unsigned Integers Section */}
-    <h2 className="text-3xl font-bold text-gray-900 mt-10">Unsigned Integers</h2>
+    <h2 className="text-3xl font-bold  mt-10">Unsigned Integers</h2>
 
-    <p className="text-lg text-gray-700 leading-relaxed">
+    <p className="text-lg  leading-relaxed">
       Unsigned integers, declared with one of the <code>uint</code> keywords, can only store non-negative values.
     </p>
 
-    <h3 className="text-2xl font-semibold text-gray-800 mt-4">Example</h3>
-    <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-x-auto">
+    <h3 className="text-2xl font-semibold  mt-4">Example</h3>
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -112,7 +112,7 @@ func main() {
     </pre>
 
     {/* Unsigned Integer Table */}
-    <h3 className="text-2xl font-semibold text-gray-800 mt-6">Unsigned Integer Types</h3>
+    <h3 className="text-2xl font-semibold  mt-6">Unsigned Integer Types</h3>
     <div className="overflow-x-auto">
       <table className="table-auto border-collapse w-full text-left">
         <thead>
@@ -157,17 +157,17 @@ func main() {
     </div>
 
     {/* Choosing Integer Type */}
-    <h2 className="text-3xl font-bold text-gray-900 mt-10">Which Integer Type to Use?</h2>
-    <p className="text-lg text-gray-700 leading-relaxed">
+    <h2 className="text-3xl font-bold  mt-10">Which Integer Type to Use?</h2>
+    <p className="text-lg  leading-relaxed">
       The type of integer to choose depends on the value the variable has to store.
     </p>
 
-    <h3 className="text-2xl font-semibold text-gray-800 mt-4">Example</h3>
-    <p className="text-lg text-gray-700 leading-relaxed">
+    <h3 className="text-2xl font-semibold  mt-4">Example</h3>
+    <p className="text-lg  leading-relaxed">
       This example will result in an error because <code>1000</code> is out of range for <code>int8</code> (which is from -128 to 127):
     </p>
 
-    <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-x-auto">
+    <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`package main
 import ("fmt")
 
@@ -182,7 +182,7 @@ func main() {
 {`./prog.go:5:7: constant 1000 overflows int8`}
     </pre>
 
-  </div>
+  </>
 );
 
 export default GoInteger;

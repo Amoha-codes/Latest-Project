@@ -2,22 +2,22 @@ import React from "react";
 
 const SwiftAssignmentOperators: React.FC = () => (
   <>
-    <h1 className="text-4xl font-extrabold text-gray-900 border-b-2 pb-2 mt-15">
+    <h1 className="text-4xl font-extrabold  border-b-2 pb-2 mt-15">
       Swift Assignment Operators
     </h1>
 
-    <p className="text-lg text-gray-700 leading-relaxed mt-4">
+    <p className="text-lg  leading-relaxed mt-4">
       Use <code>=</code> to assign a value. Compound assignment operators like <code>+=</code>, <code>-=</code>, <code>*=</code> and <code>/=</code> update a variable in place.
     </p>
 
     {/* Compound Assignment */}
     <h2 className="text-2xl font-bold text-[#6334B9] mt-6">Compound Assignment</h2>
-    <p className="text-gray-700 leading-relaxed mt-3">
+    <p className=" leading-relaxed mt-3">
       Use compound operators like <code>+=</code> and <code>*=</code> to update a variable in place.
     </p>
 
-    <h3 className="text-xl font-bold text-gray-800 mt-4">Example</h3>
-    <div className="bg-gray-900 text-green-400 font-mono p-4 rounded-lg shadow-md mt-3">
+    <h3 className="text-xl font-bold  mt-4">Example</h3>
+    <div className="bg-gray-100 text-black p-3 rounded-md font-mono">
       <pre>{`var total = 10
 total += 5
 print(total)
@@ -28,23 +28,23 @@ print(total)
 total /= 4
 print(total)`}</pre>
     </div>
-    <p className="text-gray-700 leading-relaxed mt-4">
+    <p className=" leading-relaxed mt-4">
       ✅ This example shows updating a variable with compound assignment operators.
     </p>
 
     {/* Append to String */}
     <h2 className="text-2xl font-bold text-[#6334B9] mt-6">Append to String</h2>
-    <p className="text-gray-700 leading-relaxed mt-3">
+    <p className=" leading-relaxed mt-3">
       You can also use <code>+=</code> with strings to append text to a mutable string variable.
     </p>
 
-    <h3 className="text-xl font-bold text-gray-800 mt-4">Example</h3>
-    <div className="bg-gray-900 text-green-400 font-mono p-4 rounded-lg shadow-md mt-3">
+    <h3 className="text-xl font-bold  mt-4">Example</h3>
+    <div className="bg-gray-100 text-black p-3 rounded-md font-mono">
       <pre>{`var s = "Hello"
 s += ", Swift"
 print(s)`}</pre>
     </div>
-    <p className="text-gray-700 leading-relaxed mt-4">
+    <p className=" leading-relaxed mt-4">
       ✅ This example appends to a string in place using <code>+=</code>.
     </p>
   </>

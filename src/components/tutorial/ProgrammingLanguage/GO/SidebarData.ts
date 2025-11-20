@@ -30,7 +30,7 @@ export const sidebarItems: SidebarItem[] = [
       { title: "Naming Rules", component: "namingrules" },
     ],
   },
-  { title: "GO Constants", component: "constants" },
+  { title: "GO Constants", component: "goconstants" },
     {
     title: "GO Output",
     component: "output",
@@ -109,8 +109,8 @@ export const sidebarItems: SidebarItem[] = [
     hasArrow: true,
     subtopics: [
       { title: "Create/Call Function", component: "callfunction" },
-      { title: "Parameters/Arguments", component: "para,eters" },
-      { title: "Function Returns", component: "function" },
+      { title: "Parameters/Arguments", component: "parameters" },
+      { title: "Function Returns", component: "returns" },
       { title: "Recursion", component: "recursion" },
   
     ],
