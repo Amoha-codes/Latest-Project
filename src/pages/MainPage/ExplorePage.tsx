@@ -1,7 +1,7 @@
 
 import React from "react";
 // import TutorialComponent from "../components/tutorial/TutorialComponent";
-import ExploreAllComponent from "../components/Course/ExploreAllComponent";
+import ExploreAllComponent from "../../components/Course/ExploreAllComponent";
 
 interface TutorialPageProps {
   darkMode: boolean;

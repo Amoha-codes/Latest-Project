@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ChevronDown, ChevronRight } from "lucide-react";
 // Import path is modified to be relative to where the component is used, or simply use types in the same file
-import type { SidebarItem } from "../../../data/tutorial/JavaTheory/javaData"; // Assuming new path
+import type { SidebarItem } from "../../../../data/tutorial/JavaTheory/javaData"; // Assuming new path
 
 interface SidebarProps {
   data: SidebarItem[];
@@ -35,6 +35,7 @@ const Sidebar: React.FC<SidebarProps> = ({ data, activeHref, onSelect, darkMode,
       });
       setOpenItems(parentHrefsToOpen);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeHref, data]);
 
   const toggleItem = (href: string) => {

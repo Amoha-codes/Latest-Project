@@ -1,4 +1,4 @@
-import React from "react";
+
 
 export default function GraphqlValidation() {
   return (
@@ -52,7 +52,7 @@ const Mutation = {
   signUp: (root, args) => {
     const { email, firstName, password } = args.input;
 
-    const emailExpression = /^(([^<>()\[]\\.,;:\s@"]+(\\.[^<>()\[]\\.,;:\s@"]+)*)|(".+"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\-0-9]+\\.)+[a-zA-Z]{2,}))$/;
+    const emailExpression = /^(([^<>()[]\\.,;:s@"]+(\\.[^<>()[]\\.,;:s@"]+)*)|(".+"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z-0-9]+\\.)+[a-zA-Z]{2,}))$/;
 
     const isValidEmail = emailExpression.test(String(email).toLowerCase());
     if (!isValidEmail) throw new Error("email not in proper format");

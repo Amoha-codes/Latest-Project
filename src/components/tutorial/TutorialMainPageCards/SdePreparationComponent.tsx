@@ -24,8 +24,9 @@ interface PreparationCard {
 // 3. Main Component (Using the name and props from the first snippet)
 const TutorialPageComponent: React.FC<TutorialPageComponentProps> = ({ darkMode }) => {
   // Keeping useState for card completion status and using the ESLint suppression
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [completedCourses] = useState<Set<string>>(new Set());
+  
+  // eslint-disable-next-line no-empty-pattern
+  const [] = useState<Set<string>>(new Set());
 
   // Preparation Card Data (Kept)
   const preparationCards: PreparationCard[] = [

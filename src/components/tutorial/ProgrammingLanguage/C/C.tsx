@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Layout from "./Layout";
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { sidebarItems } from "./SidebarData";
+
 import CHome from "./Topic/Home";
 import CIntroduction from "./Topic/intro";
 import CGetStarted from "./Topic/GetStarted";

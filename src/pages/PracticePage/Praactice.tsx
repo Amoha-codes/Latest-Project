@@ -869,8 +869,7 @@ export interface Question {
     link: string;
 }
 
-// --- CONFIG ---
-const PRIMARY_COLOR = "#6334B9"; // Custom color
+
 
 
 let currentId = 1;

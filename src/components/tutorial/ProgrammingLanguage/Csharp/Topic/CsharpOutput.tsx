@@ -1,5 +1,5 @@
 import React from 'react';
-import type CSharpOutput from './Home';
+
 
 const CsharpOutput: React.FC = () => (
   <div className="mt-20">

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Layout from "./Layout";
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { sidebarItems } from "./SidebarData";
+
 import RubyHome from "./Topic/Home";
 import RubyOverview from "./Topic/RubyOverview";
 import RubyEnvironmentSetup from "./Topic/EvironmentSetup";

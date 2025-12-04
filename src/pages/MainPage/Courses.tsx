@@ -10,7 +10,7 @@
 
 // export default CoursesPage
 import { useState } from "react";
-import CoursesSection from "../components/Courses";
+import CoursesSection from "../../components/MainPageComponents/Courses";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Layout from "./Layout";
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { sidebarItems } from "./SidebarData";
+
 import RustHome from "./Topic/Home";
 import RustIntro from "./Topic/RustIntro";
 import RustEnvironmentSetup from "./Topic/Environmentsetup";

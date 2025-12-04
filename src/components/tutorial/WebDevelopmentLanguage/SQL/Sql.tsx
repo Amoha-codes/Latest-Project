@@ -50,7 +50,6 @@ import SQLNullFunctions from "./Topics/sql-null-functions";
 import SQLStoredProcedures from "./Topics/sql-stored-procedures";
 import SQLComments from "./Topics/sql-comments";
 
-import SQLViews from "./Topics/sql-views";
 import SQLInjection from "./Topics/sql-injection";
 import SQLHosting from "./Topics/sql-hosting";
 import SQLDataTypes from "./Topics/sql-data-types";

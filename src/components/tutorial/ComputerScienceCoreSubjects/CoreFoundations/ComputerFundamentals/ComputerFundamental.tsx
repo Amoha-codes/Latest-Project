@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 // Import Layout
 import Layout from '../ComputerFundamentals/Layout.tsx';
 // Import sidebar data
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import {sidebarItems} from "../ComputerFundamentals/SidebarData.ts"
- 
+
 
 // Import specific topic components
 import Home from '../ComputerFundamentals/Topic/Home.tsx';

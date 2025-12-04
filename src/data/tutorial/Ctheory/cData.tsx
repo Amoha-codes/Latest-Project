@@ -1814,7 +1814,7 @@ export const tutorialContent: Record<string, TopicContent> = {
     <br />
     int main() &#123;<br />
     &nbsp;&nbsp;int x = 7;<br />
-    &nbsp;&nbsp;printf("%d", (x &lt; 5 && x &lt; 10)); <span className="text-gray-500 dark:text-gray-400">// 0 (false) because x < 5 is false</span><br />
+    &nbsp;&nbsp;printf("%d", (x &lt; 5 && x &lt; 10)); <span className="text-gray-500 dark:text-gray-400">// 0 (false) because x  is false</span><br />
     &nbsp;&nbsp;return 0;<br />
     &#125;
   </p>
@@ -5698,10 +5698,10 @@ int main() {
         </p>
         <div className="bg-gray-100 p-4 rounded-lg shadow-inner mb-6 text-sm">
           <p className="font-mono bg-white dark:bg-gray-900 p-2 border border-gray-300 dark:border-gray-700 rounded text-black dark:text-gray-200">
-            cars.<span className="text-red-600 dark:text-red-400">erase</span>(<span className="text-purple-600 dark:text-purple-400">"Volvo"</span>);  <span className="text-gray-500 dark:text-gray-400 ">// Remove specific element </span><br />
-            cars.<span className="text-red-600 dark:text-red-400">erase</span>(<span className="text-purple-600 dark:text-purple-400">"Mazda"</span>);  <br />
+            cars.<span className="text-red-600 dark:text-red-400">erase</span>(<span className="text-purple-600 dark:text-purple-400">"Volvo"</span>); <span className="text-gray-500 dark:text-gray-400 ">// Remove specific element </span><br />
+            cars.<span className="text-red-600 dark:text-red-400">erase</span>(<span className="text-purple-600 dark:text-purple-400">"Mazda"</span>); <br />
             <br />
-            cars.<span className="text-red-600 dark:text-red-400">clear</span>();  <span className="text-gray-500 dark:text-gray-400 ">// Remove all elements</span>
+            cars.<span className="text-red-600 dark:text-red-400">clear</span>(); <span className="text-gray-500 dark:text-gray-400 ">// Remove all elements</span>
           </p>
         </div>
 
@@ -5711,7 +5711,7 @@ int main() {
         </p>
         <div className="bg-gray-100 p-4 rounded-lg shadow-inner mb-6 text-sm">
           <p className="font-mono bg-white dark:bg-gray-900 p-2 border border-gray-300 dark:border-gray-700 rounded text-black dark:text-gray-200">
-            cout &lt;&lt; cars.<span className="text-red-600 dark:text-red-400">size</span>() &lt;&lt; <span className="text-purple-600 dark:text-purple-400">"\\n"</span>;  <span className="text-gray-500 dark:text-gray-400 ">// Outputs the number of elements</span>
+            cout &lt;&lt; cars.<span className="text-red-600 dark:text-red-400">size</span>() &lt;&lt; <span className="text-purple-600 dark:text-purple-400">"\\n"</span>; <span className="text-gray-500 dark:text-gray-400 ">// Outputs the number of elements</span>
           </p>
         </div>
 
