@@ -15,11 +15,11 @@ import PhpModifyStrings from "./Topic/modifystring";
 import PhpConcatenateStrings from "./Topic/concatenatestring";
 import PhpSlicingStrings from "./Topic/slicingstring";
 import PhpEscapeCharacters from "./Topic/escapecharacter";
-import PhpNumbers from "./Topic/Number";
+// import PhpNumbers from "./Topic/Number";
 import PhpCasting from "./Topic/casting";
 import PhpMathFunctions from "./Topic/math";
 import PhpConstants from "./Topic/constants";
-import PhpMagicConstants from "./Topic/magicconstants";
+// import PhpMagicConstants from "./Topic/magicconstants";
 import PhpOperators from "./Topic/operators";
 import PhpIfStatements from "./Topic/phpif";
 import PhpIfOperators from "./Topic/ifoperators";
@@ -52,9 +52,9 @@ import PhpPost from "./Topic/$_post";
 import PhpGet from "./Topic/$_get";
 import PhpRegex from "./Topic/phpRegEx";
 import PhpAddArrayItems from "./Topic/addarrays";
-import PhpDataTypes from "./Topic/datatypes";
-import PhpEchoPrint from "./Topic/echoprint";
-import PhpFormHandling from "./Topic/formhandling";
+// import PhpDataTypes from "./Topic/datatypes";
+// import PhpEchoPrint from "./Topic/echoprint";
+// import PhpFormHandling from "./Topic/formhandling";
 import PhpFormValidation from "./Topic/formvalidation";
 import PhpFormRequiredFields from "./Topic/formrequired";
 import PhpValidateEmailUrl from "./Topic/formemail";
@@ -70,18 +70,18 @@ const topicComponents: { [key: string]: React.FC } = {
     comments: PhpComments,
     variables: PhpVariables,
     scopevariables: PhpVariableScope,
-    echoprint: PhpEchoPrint,
-    datatypes: PhpDataTypes,
+    // echoprint: PhpEchoPrint,
+    // datatypes: PhpDataTypes,
     string: PhpStrings,
     modifystring: PhpModifyStrings,
     concatenatestring: PhpConcatenateStrings,
     slicingstring: PhpSlicingStrings,
     escapecharacter: PhpEscapeCharacters,
-    phpnumbers: PhpNumbers,
+    // phpnumbers: PhpNumbers,
     phpcasting: PhpCasting,
     phpmath: PhpMathFunctions,
     phpconstants: PhpConstants,
-    phpmagicconstants: PhpMagicConstants,
+    // phpmagicconstants: PhpMagicConstants,
     phpoperators: PhpOperators,
     phpif: PhpIfStatements,
     ifoperators: PhpIfOperators,
@@ -114,7 +114,7 @@ const topicComponents: { [key: string]: React.FC } = {
     post:PhpPost,
     get:PhpGet,
     phpregex:PhpRegex,
-    phpformhandling:PhpFormHandling,
+    // phpformhandling:PhpFormHandling,
     phpformvalidation:PhpFormValidation,
     phpformrequired:PhpFormRequiredFields,
     phpformurlemail:PhpValidateEmailUrl,
