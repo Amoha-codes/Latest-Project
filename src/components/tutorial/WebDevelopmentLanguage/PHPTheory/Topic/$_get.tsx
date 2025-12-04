@@ -11,7 +11,7 @@ const PhpGet: React.FC = () => {
 
       <p className="leading-relaxed">
         <code>$_GET</code> is a superglobal array in PHP that stores variables passed
-        through the HTTP <strong>GET</strong> method.  
+        through the HTTPs <strong>GET</strong> method.  
         GET data is visible in the URL and is commonly used for sending small amounts of data.
       </p>
 
