@@ -2,68 +2,93 @@ import React from "react";
 
 const PhpForLoop: React.FC = () => {
   return (
-    <div style={{ padding: "20px", lineHeight: 1.7 }}>
-      <h1>PHP for Loop</h1>
+    <div className="mt-20 space-y-8">
 
-      <p>
-        The PHP <b>for</b> loop executes a block of code a specified number of times.
+      {/* Title */}
+      <h1 className="text-4xl font-extrabold border-b-2 pb-3">
+        PHP for Loop
+      </h1>
+
+      {/* Intro */}
+      <p className="leading-relaxed">
+        The <strong>for loop</strong> in PHP is used when you know exactly how many times 
+        the code block should run. It is commonly used for counting iterations.
       </p>
 
-      <h2>Basic Syntax</h2>
-      <pre>
+      {/* Syntax */}
+      <h2 className="text-2xl font-bold mt-10">Syntax</h2>
+
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono whitespace-pre-wrap">
 {`for (expression1; expression2; expression3) {
   // code block
 }`}
       </pre>
 
-      <p>
-        How it works:
-        <ul>
-          <li><b>expression1:</b> evaluated once before the loop starts</li>
-          <li><b>expression2:</b> evaluated before each iteration; loop runs while true</li>
-          <li><b>expression3:</b> evaluated after each iteration</li>
-        </ul>
+      <p className="leading-relaxed">
+        Here's how a <strong>for loop</strong> works:
       </p>
 
-      <h2>Example: Print numbers from 0 to 10</h2>
-      <pre>
+      <ul className="list-disc list-inside space-y-1 leading-relaxed">
+        <li><strong>expression1</strong> runs once at the beginning (initialization).</li>
+        <li><strong>expression2</strong> runs before every loop iteration (condition).</li>
+        <li><strong>expression3</strong> runs after each loop iteration (increment/decrement).</li>
+      </ul>
+
+      {/* Basic Example */}
+      <h2 className="text-2xl font-bold mt-10">Basic Example</h2>
+
+      <p className="leading-relaxed">
+        This example prints numbers from 0 to 10:
+      </p>
+
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono whitespace-pre-wrap">
 {`for ($x = 0; $x <= 10; $x++) {
   echo "The number is: $x <br>";
 }`}
       </pre>
 
-      <p>Explanation:</p>
-      <ul>
-        <li>$x = 0 sets the counter</li>
-        <li>$x <= 10 is checked before each iteration</li>
-        <li>$x++ increments $x after each iteration</li>
-      </ul>
+      {/* break */}
+      <h2 className="text-2xl font-bold mt-10">The break Statement</h2>
 
-      <h2>PHP break Statement</h2>
-      <p>Stop the loop when $x is 3:</p>
-      <pre>
+      <p className="leading-relaxed">
+        Use <code>break</code> to exit the loop even if the condition is still true.
+      </p>
+
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono whitespace-pre-wrap">
 {`for ($x = 0; $x <= 10; $x++) {
   if ($x == 3) break;
   echo "The number is: $x <br>";
 }`}
       </pre>
 
-      <h2>PHP continue Statement</h2>
-      <p>Skip the iteration when $x is 3 and continue with the next:</p>
-      <pre>
+      {/* continue */}
+      <h2 className="text-2xl font-bold mt-10">The continue Statement</h2>
+
+      <p className="leading-relaxed">
+        Use <code>continue</code> to skip the current iteration and move to the next one.
+      </p>
+
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono whitespace-pre-wrap">
 {`for ($x = 0; $x <= 10; $x++) {
   if ($x == 3) continue;
   echo "The number is: $x <br>";
 }`}
       </pre>
 
-      <h2>Counting by Tens</h2>
-      <p>Count to 100 by tens:</p>
-      <pre>
+      {/* Count by 10 */}
+      <h2 className="text-2xl font-bold mt-10">Step Counting</h2>
+
+      <p className="leading-relaxed">
+        You can increment by any number.  
+        This example counts to 100 in steps of 10:
+      </p>
+
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono whitespace-pre-wrap">
 {`for ($x = 0; $x <= 100; $x += 10) {
   echo "The number is: $x <br>";
 }`}
       </pre>
+
     </div>
   );
 };

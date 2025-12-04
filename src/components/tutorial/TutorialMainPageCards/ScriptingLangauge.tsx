@@ -23,7 +23,7 @@ const ScriptingLanguagesPage = () => {
       problemsText: 'Problems',
       level: 'Beginner',
       completed: false,
-      href: '/python-scripting',
+      href: '/pythonTutorial',
       icon: 'python',
       category: 'Automation'
     },

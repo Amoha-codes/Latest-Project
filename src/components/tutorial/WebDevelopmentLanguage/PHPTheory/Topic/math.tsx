@@ -1,97 +1,108 @@
 import React from "react";
 
-const PHPMathFunctions: React.FC = () => {
+const PhpMathFunctions: React.FC = () => {
   return (
-    <div className="p-6 leading-7">
-      <h1 className="text-3xl font-bold mb-4">PHP Math Functions</h1>
+    <div className="mt-20 space-y-8">
 
-      <p>
-        PHP provides a set of built-in math functions that help you perform
-        mathematical operations on numbers.
+      {/* Title */}
+      <h1 className="text-4xl font-extrabold border-b-2 pb-3">
+        PHP Math Functions
+      </h1>
+
+      {/* Intro */}
+      <p className="leading-relaxed">
+        PHP provides a wide range of built-in math functions that allow you to perform 
+        mathematical operations on numbers. These functions are simple to use and useful 
+        for calculations, random number generation, rounding, and more.
       </p>
 
       {/* pi() */}
-      <h2 className="text-2xl font-semibold mt-6">PHP pi() Function</h2>
-      <p>The <strong>pi()</strong> function returns the value of PI.</p>
+      <h2 className="text-2xl font-bold">PHP <code>pi()</code> Function</h2>
+      <p className="leading-relaxed">
+        The <code>pi()</code> function returns the value of <strong>PI</strong>.
+      </p>
 
-      <pre className="bg-gray-200 p-3 rounded mt-2">
+      <h3 className="text-xl font-semibold">Example</h3>
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`echo(pi());`}
       </pre>
 
       {/* min & max */}
-      <h2 className="text-2xl font-semibold mt-6">
-        PHP min() and max() Functions
-      </h2>
-      <p>
-        The <strong>min()</strong> and <strong>max()</strong> functions return
-        the lowest and highest values in a list.
+      <h2 className="text-2xl font-bold">PHP <code>min()</code> and <code>max()</code> Functions</h2>
+
+      <p className="leading-relaxed">
+        The <code>min()</code> and <code>max()</code> functions return the lowest and highest 
+        value from a list of numbers.
       </p>
 
-      <pre className="bg-gray-200 p-3 rounded mt-2">
+      <h3 className="text-xl font-semibold">Example</h3>
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`echo(min(0, 150, 30, 20, -8, -200));
 echo(max(0, 150, 30, 20, -8, -200));`}
       </pre>
 
       {/* abs */}
-      <h2 className="text-2xl font-semibold mt-6">PHP abs() Function</h2>
-      <p>
-        The <strong>abs()</strong> function returns the absolute (positive)
-        value of a number.
+      <h2 className="text-2xl font-bold">PHP <code>abs()</code> Function</h2>
+
+      <p className="leading-relaxed">
+        The <code>abs()</code> function returns the absolute (positive) value of a number.
       </p>
 
-      <pre className="bg-gray-200 p-3 rounded mt-2">
+      <h3 className="text-xl font-semibold">Example</h3>
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`echo(abs(-6.7));`}
       </pre>
 
       {/* sqrt */}
-      <h2 className="text-2xl font-semibold mt-6">PHP sqrt() Function</h2>
-      <p>
-        The <strong>sqrt()</strong> function returns the square root of a number.
+      <h2 className="text-2xl font-bold">PHP <code>sqrt()</code> Function</h2>
+
+      <p className="leading-relaxed">
+        The <code>sqrt()</code> function returns the square root of a number.
       </p>
 
-      <pre className="bg-gray-200 p-3 rounded mt-2">
+      <h3 className="text-xl font-semibold">Example</h3>
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`echo(sqrt(64));`}
       </pre>
 
       {/* round */}
-      <h2 className="text-2xl font-semibold mt-6">PHP round() Function</h2>
-      <p>
-        The <strong>round()</strong> function rounds a floating-point number to
-        the nearest integer.
+      <h2 className="text-2xl font-bold">PHP <code>round()</code> Function</h2>
+
+      <p className="leading-relaxed">
+        The <code>round()</code> function rounds a number to the nearest integer.
       </p>
 
-      <pre className="bg-gray-200 p-3 rounded mt-2">
-{`echo(round(0.60));
-echo(round(0.49));`}
+      <h3 className="text-xl font-semibold">Example</h3>
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
+{`echo(round(0.60)); // 1
+echo(round(0.49)); // 0`}
       </pre>
 
-      {/* rand() */}
-      <h2 className="text-2xl font-semibold mt-6">Random Numbers</h2>
-      <p>
-        The <strong>rand()</strong> function generates a random integer.
+      {/* Random numbers */}
+      <h2 className="text-2xl font-bold">Random Numbers</h2>
+
+      <p className="leading-relaxed">
+        The <code>rand()</code> function is used to generate a random number.
       </p>
 
-      <pre className="bg-gray-200 p-3 rounded mt-2">
+      <h3 className="text-xl font-semibold">Example</h3>
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`echo(rand());`}
       </pre>
 
-      <p className="mt-4">
-        You can also specify minimum and maximum values:
+      <p className="leading-relaxed">
+        You can also specify a range using <code>rand(min, max)</code>.  
+        For example, to generate a random number between 10 and 100:
       </p>
 
-      <pre className="bg-gray-200 p-3 rounded mt-2">
-{`echo(rand(10, 100));   // random number between 10 and 100`}
+      <h3 className="text-xl font-semibold">Example</h3>
+
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
+{`echo(rand(10, 100));`}
       </pre>
 
-      <h2 className="text-2xl font-semibold mt-6">
-        Complete PHP Math Reference
-      </h2>
-      <p>
-        PHP provides many more math functions. You can refer to the complete PHP
-        Math Reference for detailed explanations and examples.
-      </p>
     </div>
   );
 };
 
-export default PHPMathFunctions;
+export default PhpMathFunctions;

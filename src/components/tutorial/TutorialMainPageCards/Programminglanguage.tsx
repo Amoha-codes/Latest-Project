@@ -26,7 +26,7 @@ const PracticePage = () => {
       problemsText: 'Problems',
       level: 'Beginner to Advanced',
       completed: false,
-      url: '/launchingsoon',
+      url: '/C',
       icon: 'c'
     },
     {
@@ -106,7 +106,7 @@ const PracticePage = () => {
       problemsText: 'Problems',
       level: 'Beginner to Advanced',
       completed: false,
-      url: '/launchingsoon',
+      url: '/Ruby',
       icon: 'ruby'
     },
     {
@@ -116,7 +116,7 @@ const PracticePage = () => {
       problemsText: 'Problems',
       level: 'Beginner to Advanced',
       completed: false,
-      url: '/launchingsoon',
+      url: '/Rust',
       icon: 'rust'
     },
     {
@@ -126,7 +126,7 @@ const PracticePage = () => {
       problemsText: 'Problems',
       level: 'Beginner to Advanced',
       completed: false,
-      url: '/launchingsoon',
+      url: '/DartProgramming',
       icon: 'dart'
     },
     {

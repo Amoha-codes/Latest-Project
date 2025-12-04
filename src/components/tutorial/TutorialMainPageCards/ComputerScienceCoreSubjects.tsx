@@ -61,7 +61,7 @@ const ComputerSciencePage = () => {
       topicsText: 'Topics',
       level: 'Beginner to Advanced',
       completed: false,
-      url: '/OperatingSystemsTutorial',
+      url: '/OS',
       icon: 'os',
       category: 'Systems & Networking'
     },
@@ -72,7 +72,7 @@ const ComputerSciencePage = () => {
       topicsText: 'Topics',
       level: 'Beginner to Advanced',
       completed: false,
-     url: '/OrganizationTutorial',
+     url: '/COA',
       icon: 'architecture',
       category: 'Systems & Networking'
     },
@@ -83,7 +83,7 @@ const ComputerSciencePage = () => {
       topicsText: 'Topics',
       level: 'Beginner to Advanced',
       completed: false,
-      url: '/NetworksTutorial',
+      url: '/CN',
       icon: 'networks',
       category: 'Systems & Networking'
     },
@@ -94,7 +94,7 @@ const ComputerSciencePage = () => {
       topicsText: 'Topics',
       level: 'Beginner to Advanced',
       completed: false,
-     url: '/ComputationTutorial',
+     url: '/TOC',
       icon: 'computation',
       category: 'Systems & Networking'
     },
@@ -105,7 +105,7 @@ const ComputerSciencePage = () => {
       topicsText: 'Topics',
       level: 'Beginner to Advanced',
       completed: false,
-      url: '/CompilerTutorial',
+      url: '/CD',
       icon: 'compiler',
       category: 'Systems & Networking'
     },
@@ -116,7 +116,7 @@ const ComputerSciencePage = () => {
       topicsText: 'Topics',
       level: 'Beginner to Advanced',
       completed: false,
-      url: '/DistributedTutorial',
+      url: '/DS',
       icon: 'distributed',
       category: 'Systems & Networking'
     },

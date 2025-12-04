@@ -14,99 +14,150 @@ export interface SidebarItem {
 }
 
 export const sidebarItems: SidebarItem[] = [
-  
-    
-      { title: "PHP Home", component: "php-home" },
-      { title: "PHP Intro", component: "intro" },
-      { title: "PHP Install", component: "install" },
-      { title: "PHP Syntax", component: "syntax" },
 
+
+  { title: "PHP Home", component: "home" },
+  { title: "PHP Intro", component: "intro" },
+  { title: "PHP Install", component: "install" },
+  { title: "PHP Syntax", component: "syntax" },
+
+
+  {
+    title: "PHP Comments",
+    component: "phpcomments",
+    icon: BookOpen,
+    hasArrow: true,
+    subtopics: [
       { title: "PHP Comments", component: "comments" },
-      { title: "PHP Variables", component: "variables" },
-      { title: "PHP Echo / Print", component: "echo-print" },
+      { title: "PHP MultiComments", component: "multicomments" },
 
-      { title: "PHP Data Types", component: "php-data-types" },
-      { title: "PHP Strings", component: "php-strings" },
-      { title: "PHP Numbers", component: "php-numbers" },
-      { title: "PHP Casting", component: "php-casting" },
-      { title: "PHP Math", component: "php-math" },
-      { title: "PHP Constants", component: "php-constants" },
-      { title: "PHP Magic Constants", component: "php-magic-constants" },
+    ]
+  },
 
-      { title: "PHP Operators", component: "php-operators" },
-      { title: "PHP If-Else-ElseIf", component: "php-if-else" },
-      { title: "PHP Switch", component: "php-switch" },
-      { title: "PHP Loops", component: "php-loops" },
-      { title: "PHP Functions", component: "php-functions" },
-      { title: "PHP Arrays", component: "php-arrays" },
-      { title: "PHP Superglobals", component: "php-superglobals" },
-      { title: "PHP RegEx", component: "php-regex" },
-    
-  
+  {
+    title: "PHP Variables",
+    component: "phpvariables",
+    icon: BookOpen,
+    hasArrow: true,
+    subtopics: [
+      { title: " Variables", component: "variables" },
+      { title: "Variables Scope", component: "scopevariables" },
+
+    ]
+  },
+  { title: "PHP Echo / Print", component: "echoprint" },
+  { title: "PHP Data Types", component: "datatypes" },
+  {
+    title: "PHP Strings",
+    component: "phpstrings",
+    icon: BookOpen,
+    hasArrow: true,
+    subtopics: [
+      { title: " Php String", component: "string" },
+      { title: "Modify String", component: "modifystring" },
+      { title: "Concatenate String", component: "concatenatestring" },
+      { title: "Slicing String", component: "slicingstring" },
+      { title: "Escape Character", component: "escapecharacter" },
+
+
+    ]
+  },
+  { title: "PHP Numbers", component: "phpnumbers" },
+  { title: "PHP Casting", component: "phpcasting" },
+  { title: "PHP Math", component: "phpmath" },
+  { title: "PHP Constants", component: "phpconstants" },
+  { title: "PHP Magic Constants", component: "phpmagicconstants" },
+
+  { title: "PHP Operators", component: "phpoperators" },
+
+    {
+    title: "PHP IfElseElseIf",
+    component: "phpifelse",
+    icon: BookOpen,
+    hasArrow: true,
+    subtopics: [
+      { title: " Php If", component: "phpif" },
+      { title: "Php If Operators", component: "ifoperators" },
+      { title: "PHP If....Else", component: "ifelse" },
+      { title: "Nested If", component: "nestedif" },
+
+
+
+    ]
+  },
+  { title: "PHP Switch", component: "phpswitch" },
+      {
+    title: "PHP Loops",
+    component: "phploops",
+    icon: BookOpen,
+    hasArrow: true,
+    subtopics: [
+      { title: "Loops", component: "loops" },
+      { title: "While Loop", component: "whileloop" },
+      { title: "Do While Loop", component: "dowhileloop" },
+      { title: "For Loop", component: "forloop" },
+      { title: "For Each Loop", component: "foreachloop" },
+      { title: "Break ", component: "break" },
+      { title: "Continue", component: "continue" },
+
+    ]
+  },
+  { title: "PHP Functions", component: "phpfunctions" },
+{
+  title: "PHP Arrays",
+  component: "phparrays",
+  icon: BookOpen,
+  hasArrow: true,
+  subtopics: [
+    { title: "Arrays", component: "arrays" },
+    { title: "Indexed Arrays", component: "indexedarrays" },
+    { title: "Associative Arrays", component: "associativearrays" },
+    { title: "Create Arrays", component: "createarrays" },
+    { title: "Access Array Items", component: "accessarrayitems" },
+    { title: "Update Array Items", component: "updatearrayitems" },
+    { title: "Add Array Items", component: "addarrayitems" },
+    { title: "Remove Array Items", component: "removearrayitems" },
+    { title: "Sorting Arrays", component: "sortingarrays" },
+    { title: "Multidimensional Arrays", component: "multidimensionalarrays" },
+    { title: "Array Functions", component: "arrayfunctions" }
+  ]
+},
+
+
+{
+  title: "PHP Superglobals",
+  component: "phpsuperglobals",
+  icon: BookOpen,
+  hasArrow: true,
+  subtopics: [
+    { title: " Superglobals", component: "superglobals" },
+    { title: "$GLOBALS", component: "global" },
+    { title: "$_SERVER", component: "server" },
+    { title: "$_REQUEST", component: "request" },
+    { title: "$_POST", component: "post" },
+    { title: "$_GET", component: "get" },
+
+  ]
+},
+
+  { title: "PHP RegEx", component: "phpregex" },
+
+
 
   {
     title: "PHP Forms",
-    component: "php-forms",
+    component: "phpforms",
     icon: BookOpen,
     hasArrow: true,
     subtopics: [
-      { title: "Form Handling", component: "php-form-handling" },
-      { title: "Form Validation", component: "php-form-validation" },
-      { title: "Form Required", component: "php-form-required" },
-      { title: "Form URL/Email", component: "php-form-url-email" },
-      { title: "Form Complete", component: "php-form-complete" }
+      { title: "Form Handling", component: "phpformhandling" },
+      { title: "Form Validation", component: "phpformvalidation" },
+      { title: "Form Required", component: "phpformrequired" },
+      { title: "Form URL/Email", component: "phpformurlemail" },
+      { title: "Form Complete", component: "phpformcomplete" }
     ]
   },
 
-  {
-    title: "PHP OOP",
-    component: "php-oop",
-    icon: BookOpen,
-    hasArrow: true,
-    subtopics: [
-      { title: "What is OOP", component: "php-oop-intro" },
-      { title: "Classes / Objects", component: "php-classes-objects" },
-      { title: "Constructor", component: "php-constructor" },
-      { title: "Destructor", component: "php-destructor" },
-      { title: "Access Modifiers", component: "php-access-modifiers" },
-      { title: "Inheritance", component: "php-inheritance" },
-      { title: "Constants", component: "php-oop-constants" },
-      { title: "Abstract Classes", component: "php-abstract-classes" },
-      { title: "Interfaces", component: "php-interfaces" },
-      { title: "Traits", component: "php-traits" },
-      { title: "Static Methods", component: "php-static-methods" },
-      { title: "Static Properties", component: "php-static-properties" },
-      { title: "Namespaces", component: "php-namespaces" },
-      { title: "Iterables", component: "php-iterables" }
-    ]
-  },
 
-  {
-    title: "MySQL Database",
-    component: "php-mysql",
-    icon: BookOpen,
-    hasArrow: true,
-    subtopics: [
-      { title: "MySQL Database", component: "mysql-database" },
-      { title: "MySQL Connect", component: "mysql-connect" },
-      { title: "MySQL Create DB", component: "mysql-create-db" },
-      { title: "MySQL Create Table", component: "mysql-create-table" },
-      { title: "MySQL Insert", component: "mysql-insert" },
-      { title: "MySQL Select", component: "mysql-select" },
-      { title: "MySQL Update", component: "mysql-update" },
-      { title: "MySQL Delete", component: "mysql-delete" }
-    ]
-  },
 
-  {
-    title: "PHP Advanced",
-    component: "php-advanced",
-    icon: BookOpen,
-    hasArrow: true,
-    subtopics: [
-      { title: "PHP Date and Time", component: "php-date-time" },
-      { title: "PHP Include", component: "php-include" },
-      { title: "PHP File Handling", component: "php-file-handling" }
-    ]
-  }
 ];

@@ -23,7 +23,7 @@ const SystemsProgrammingPage = () => {
       problemsText: 'Problems',
       level: 'Beginner to Advanced',
       completed: false,
-      url: '/launchingsoon',
+      url: '/C',
       icon: 'c',
       category: 'Systems Programming'
     },
@@ -34,7 +34,7 @@ const SystemsProgrammingPage = () => {
       problemsText: 'Problems',
       level: 'Beginner to Advanced',
       completed: false,
-      url: '/launchingsoon',
+      url: '/CppTutorial',
       icon: 'cplusplus',
       category: 'Systems Programming'
     },
@@ -45,7 +45,7 @@ const SystemsProgrammingPage = () => {
       problemsText: 'Problems',
       level: 'Beginner to Advanced',
       completed: false,
-     url: '/launchingsoon',
+     url: '/Rust',
       icon: 'rust',
       category: 'Memory Safe'
     },

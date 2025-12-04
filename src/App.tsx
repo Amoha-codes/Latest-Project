@@ -81,14 +81,32 @@ import ExploreAllComponent from "./components/Course/ExploreAllComponent.tsx";
 import GO from "./components/tutorial/ProgrammingLanguage/GO/GO.tsx";
 import Kotlin from "./components/tutorial/ProgrammingLanguage/Kotlin/Kotlin.tsx";
 import Swift from "./components/tutorial/ProgrammingLanguage/Swift/Swift.tsx";
-import ComputerFundamental from "./components/tutorial/ComputerScienceCoreSubjects/CoreFoundations/ComputerFundamentals/ComputerFundamental.tsx";
-import EngMath from "./components/tutorial/ComputerScienceCoreSubjects/CoreFoundations/EngineeringMathematics/EngMath.tsx";
-import MathCS from "./components/tutorial/ComputerScienceCoreSubjects/CoreFoundations/MathForComputerScience/MathCS.tsx";
 import JSTutorial from "./components/tutorial/ProgrammingLanguage/JSTheory/JSTutorial.tsx";
 import TypescriptTutorial from "./components/tutorial/ProgrammingLanguage/TypescriptTheory/TypescriptTutorial.tsx";
 import Csharp from "./components/tutorial/ProgrammingLanguage/Csharp/Csharp.tsx";
 import JavaTutorial from "./components/tutorial/ProgrammingLanguage/JavaTheory/JavaTutorial.tsx";
 import PythonTutorial from "./components/tutorial/ProgrammingLanguage/PythonTheory/pythonTutorial.tsx";
+
+import ComputerFundamental from "./components/tutorial/ComputerScienceCoreSubjects/CoreFoundations/ComputerFundamentals/ComputerFundamental.tsx";
+import EngMath from "./components/tutorial/ComputerScienceCoreSubjects/CoreFoundations/EngineeringMathematics/EngMath.tsx";
+import MathCS from "./components/tutorial/ComputerScienceCoreSubjects/CoreFoundations/MathForComputerScience/MathCS.tsx";
+import OS from "./components/tutorial/ComputerScienceCoreSubjects/SystemsNetworking/OperatingSystems/OS.tsx";
+import COA from "./components/tutorial/ComputerScienceCoreSubjects/SystemsNetworking/COA/COA.tsx";
+import CN from "./components/tutorial/ComputerScienceCoreSubjects/SystemsNetworking/ComputerNetwork/CN.tsx";
+// import Php from "./components/tutorial/WebDevelopmentLanguage/PHPTheory/Php.tsx";
+import TOC from "./components/tutorial/ComputerScienceCoreSubjects/SystemsNetworking/TheroyOfComputation/TOC.tsx";
+import CD from "./components/tutorial/ComputerScienceCoreSubjects/SystemsNetworking/CompilerDesign/CD.tsx";
+import DS from "./components/tutorial/ComputerScienceCoreSubjects/SystemsNetworking/DistributedSystem/DS.tsx";
+import C from "./components/tutorial/ProgrammingLanguage/C/C.tsx";
+import Ruby from "./components/tutorial/ProgrammingLanguage/Ruby/Ruby.tsx";
+import Rust from "./components/tutorial/ProgrammingLanguage/Rust/Rust.tsx";
+import DartProgramming from "./components/tutorial/ProgrammingLanguage/Dart/DartProgramming.tsx";
+import HTML from "./components/tutorial/WebDevelopmentLanguage/HTML/HTML.tsx";
+import Php from "./components/tutorial/WebDevelopmentLanguage/PHPTheory/Php.tsx";
+import Sql from "./components/tutorial/WebDevelopmentLanguage/SQL/Sql.tsx";
+import Graphql from "./components/tutorial/WebDevelopmentLanguage/GRAPHQL/Graphql.tsx";
+import ASP from "./components/tutorial/WebDevelopmentLanguage/ASP.NET/ASP.tsx";
+import WebAssembly from "./components/tutorial/WebDevelopmentLanguage/Web Assembly/WebAssembly.tsx";
 
 
 
@@ -153,7 +171,16 @@ const App: React.FC = () => {
         {/* Computer Science */}
         <Route path="/ComputerFundamentals" element={<ComputerFundamental darkMode={darkMode}/>} />
         <Route path="/EngMath" element={<EngMath darkMode={darkMode}/>} />
-        <Route path="/MathsCS" element={<MathCS  />} />
+        <Route path="/MathCS" element={<MathCS  darkMode={darkMode}/>} />
+        <Route path="/OS" element={<OS  darkMode={darkMode}/>} />
+        <Route path="/COA" element={<COA  darkMode={darkMode}/>} />
+        <Route path="/CN" element={<CN  darkMode={darkMode}/>} />
+        <Route path="/TOC" element={<TOC  darkMode={darkMode}/>} />
+        <Route path="/CD" element={<CD  darkMode={darkMode}/>} />
+        <Route path="/DS" element={<DS  darkMode={darkMode}/>} />
+
+
+        
         <Route path="/JSTutorial" element={<JSTutorial darkMode={darkMode}  />} />
         <Route path="/TypescriptTutorial" element={<TypescriptTutorial darkMode={darkMode}  />} />
         <Route path="/Csharp" element={<Csharp darkMode={darkMode} />} />
@@ -163,6 +190,21 @@ const App: React.FC = () => {
         <Route path="/CppTutorial" element={<CppTutorial darkMode={darkMode} />} />
         <Route path="/JavaTutorial" element={<JavaTutorial darkMode={darkMode} />} />
         <Route path="/pythonTutorial" element={<PythonTutorial darkMode={darkMode} />} />
+       
+        <Route path="/C" element={<C  darkMode={darkMode}/>} />
+        <Route path="/Ruby" element={<Ruby  darkMode={darkMode}/>} />
+        <Route path="/Rust" element={<Rust  darkMode={darkMode}/>} />
+        <Route path="/DartProgramming" element={<DartProgramming  darkMode={darkMode}/>} />
+
+        <Route path="/HTML" element={<HTML  darkMode={darkMode}/>} />
+        <Route path="/Php" element={<Php  darkMode={darkMode}/>} />
+        <Route path="/Sql" element={<Sql  darkMode={darkMode}/>} />
+        <Route path="/Graphql" element={<Graphql  darkMode={darkMode}/>} />
+        <Route path="/ASP" element={<ASP  darkMode={darkMode}/>} />
+        <Route path="/WebAssembly" element={<WebAssembly darkMode={darkMode}/>} />
+
+
+
         
         {/* <Route path="/OperatingSystemsTutorial" element={<OperatingSystemsTutorial darkMode={darkMode} />} />
         <Route path="/OrganizationTutorial" element={<OrganizationTutorial darkMode={darkMode} />} />

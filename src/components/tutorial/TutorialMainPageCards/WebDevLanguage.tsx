@@ -22,7 +22,7 @@ const WebDevelopmentPage = () => {
       problemsText: 'Problems',
       level: 'Beginner to Advanced',
       completed: false,
-      url: '/Html', // Updated link to use a hash fragment for demonstration
+      url: '/HTML', // Updated link to use a hash fragment for demonstration
       icon: 'html'
     },
     {
@@ -42,7 +42,7 @@ const WebDevelopmentPage = () => {
       problemsText: 'Problems',
       level: 'Beginner to Advanced',
       completed: false,
-     url: '/launchingsoon',
+     url: '/JSTutorial',
       icon: 'javascript'
     },
     {
@@ -52,7 +52,7 @@ const WebDevelopmentPage = () => {
       problemsText: 'Problems',
       level: 'Beginner to Advanced',
       completed: false,
-      url: '/launchingsoon',
+      url: '/TypescriptTutorial',
       icon: 'typescript'
     },
     {
@@ -72,7 +72,7 @@ const WebDevelopmentPage = () => {
       problemsText: 'Problems',
       level: 'Beginner to Advanced',
       completed: false,
-     url: '/launchingsoon',
+     url: '/Sql',
       icon: 'sql'
     },
     {
@@ -82,7 +82,7 @@ const WebDevelopmentPage = () => {
       problemsText: 'Problems',
       level: 'Beginner to Advanced',
       completed: false,
-      url: '/launchingsoon',
+      url: '/Graphql',
       icon: 'graphql'
     },
     {
@@ -92,7 +92,7 @@ const WebDevelopmentPage = () => {
       problemsText: 'Problems',
       level: 'Beginner to Advanced',
       completed: false,
-      url: '/launchingsoon',
+      url: '/ASP',
       icon: 'aspnet'
     },
     {
@@ -112,7 +112,7 @@ const WebDevelopmentPage = () => {
       problemsText: 'Problems',
       level: 'Beginner to Advanced',
       completed: false,
-      url: '/launchingsoon',
+      url: '/WebAssembly',
       icon: 'webassembly'
     }
   ];

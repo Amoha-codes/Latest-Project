@@ -1,43 +1,56 @@
 import React from "react";
 
-const PhpSwitchStatement: React.FC = () => {
+const PhpSwitch: React.FC = () => {
   return (
-    <div className="p-4 space-y-6">
-      <h1 className="text-3xl font-bold">PHP Switch Statement</h1>
+    <div className="mt-20 space-y-8">
 
-      <p>
-        The <strong>PHP switch statement</strong> is used to perform different
-        actions based on different conditions.
+      {/* Title */}
+      <h1 className="text-4xl font-extrabold border-b-2 pb-3">
+        PHP switch Statement
+      </h1>
+
+      {/* Intro */}
+      <p className="leading-relaxed">
+        The <strong>switch</strong> statement in PHP allows you to execute
+        different blocks of code depending on different conditions.
       </p>
 
-      <h2 className="text-2xl font-semibold">Syntax</h2>
-      <pre className="bg-gray-100 p-4 rounded-md overflow-auto">
+      {/* Explanation */}
+      <h2 className="text-2xl font-bold mt-10">What is the switch Statement?</h2>
+
+      <p className="leading-relaxed">
+        The <code>switch</code> statement evaluates an expression once, then
+        compares its value with multiple <code>case</code> options.  
+        When a match is found, the corresponding block of code runs.
+      </p>
+
+      {/* Syntax */}
+      <h3 className="text-xl font-semibold mt-6">Syntax</h3>
+
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono whitespace-pre-wrap">
 {`switch (expression) {
   case label1:
-    //code block
+    // code block
     break;
   case label2:
-    //code block
+    // code block
     break;
   case label3:
-    //code block
+    // code block
     break;
   default:
-    //code block
+    // default code block
 }`}
       </pre>
 
-      <p>This is how it works:</p>
-      <ul className="list-disc ml-6">
-        <li>The expression is evaluated once</li>
-        <li>The value is compared with each case</li>
-        <li>If matched, its block executes</li>
-        <li><code>break</code> stops further checking</li>
-        <li><code>default</code> runs if no match</li>
-      </ul>
+      <p className="leading-relaxed">
+        The <strong>break</strong> keyword stops PHP from executing the next cases.
+      </p>
 
-      <h2 className="text-2xl font-semibold">Example</h2>
-      <pre className="bg-gray-100 p-4 rounded-md overflow-auto">
+      {/* Basic Example */}
+      <h3 className="text-xl font-semibold mt-6">Example</h3>
+
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono whitespace-pre-wrap">
 {`$favcolor = "red";
 
 switch ($favcolor) {
@@ -55,15 +68,19 @@ switch ($favcolor) {
 }`}
       </pre>
 
-      <h2 className="text-2xl font-semibold">The <code>break</code> Keyword</h2>
-      <p>
-        When PHP reaches a <code>break</code>, the switch block ends. If you
-        forget the <code>break</code> in a case, PHP will continue to the next
-        case (this is called <strong>fall-through</strong>).
+      {/* break Explanation */}
+      <h2 className="text-2xl font-bold mt-10">The break Keyword</h2>
+
+      <p className="leading-relaxed">
+        When PHP reaches a <code>break</code> statement, it exits the switch block.
+        If break is missing, PHP continues to execute the next case — even if it does not match.
       </p>
 
-      <h3 className="text-xl font-semibold">Example Without Break</h3>
-      <pre className="bg-gray-100 p-4 rounded-md overflow-auto">
+      <h3 className="text-xl font-semibold mt-6">
+        Example Without break
+      </h3>
+
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono whitespace-pre-wrap">
 {`$favcolor = "red";
 
 switch ($favcolor) {
@@ -80,13 +97,21 @@ switch ($favcolor) {
 }`}
       </pre>
 
-      <h2 className="text-2xl font-semibold">The <code>default</code> Case</h2>
-      <p>
-        The <code>default</code> block runs when no other case matches. It can
-        be placed anywhere (but should be last).
+      <p className="leading-relaxed">
+        Since <code>case "red"</code> does not have break,  
+        PHP will also run the <strong>blue</strong> message.
       </p>
 
-      <pre className="bg-gray-100 p-4 rounded-md overflow-auto">
+      {/* Default Keyword */}
+      <h2 className="text-2xl font-bold mt-10">The default Keyword</h2>
+
+      <p className="leading-relaxed">
+        The <code>default</code> case runs when none of the cases match.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6">Example</h3>
+
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono whitespace-pre-wrap">
 {`$d = 4;
 
 switch ($d) {
@@ -101,26 +126,21 @@ switch ($d) {
 }`}
       </pre>
 
-      <h3 className="text-xl font-semibold">Default Not at the End</h3>
-      <pre className="bg-gray-100 p-4 rounded-md overflow-auto">
-{`$d = 4;
+      <p className="leading-relaxed">
+        The <code>default</code> case can be placed anywhere,  
+        but placing it last is recommended.
+      </p>
 
-switch ($d) {
-  default:
-    echo "Looking forward to the Weekend";
-    break;
-  case 6:
-    echo "Today is Saturday";
-    break;
-  case 0:
-    echo "Today is Sunday";
-}`}
-      </pre>
+      {/* Common Code Blocks */}
+      <h2 className="text-2xl font-bold mt-10">Multiple Cases Using Same Code</h2>
 
-      <h2 className="text-2xl font-semibold">Multiple Cases Using Same Code</h2>
-      <p>You can use multiple cases for the same output:</p>
+      <p className="leading-relaxed">
+        You can make several cases run the same block of code by grouping them together.
+      </p>
 
-      <pre className="bg-gray-100 p-4 rounded-md overflow-auto">
+      <h3 className="text-xl font-semibold mt-6">Example</h3>
+
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono whitespace-pre-wrap">
 {`$d = 3;
 
 switch ($d) {
@@ -139,8 +159,9 @@ switch ($d) {
     echo "Something went wrong";
 }`}
       </pre>
+
     </div>
   );
 };
 
-export default PhpSwitchStatement;
+export default PhpSwitch;

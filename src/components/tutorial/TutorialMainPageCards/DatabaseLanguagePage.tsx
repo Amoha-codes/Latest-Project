@@ -23,7 +23,7 @@ const DatabaseLanguagesPage = () => {
       problemsText: 'Problems',
       level: 'Beginner to Advanced',
       completed: false,
-      url: '/launchingsoon',
+      url: '/Sql',
       icon: 'sql',
       category: 'Relational'
     },
@@ -67,7 +67,7 @@ const DatabaseLanguagesPage = () => {
       problemsText: 'Problems',
       level: 'Beginner to Advanced',
       completed: false,
-      url: '/launchingsoon',
+      url: '/Graphql',
       icon: 'graphql',
       category: 'Query Language'
     },

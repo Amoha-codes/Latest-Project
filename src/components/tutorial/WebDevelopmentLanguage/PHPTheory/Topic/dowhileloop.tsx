@@ -2,19 +2,32 @@ import React from "react";
 
 const PhpDoWhileLoop: React.FC = () => {
   return (
-    <div style={{ padding: "20px", lineHeight: 1.7 }}>
-      <h1>PHP do...while Loop</h1>
+    <div className="mt-20 space-y-8">
 
-      <p>
-        The PHP <b>do...while</b> loop executes a block of code <b>at least
-        once</b>, and then repeats the loop as long as the specified condition
-        is true.
+      {/* Title */}
+      <h1 className="text-4xl font-extrabold border-b-2 pb-3">
+        PHP do...while Loop
+      </h1>
+
+      {/* Intro */}
+      <p className="leading-relaxed">
+        The <strong>do...while</strong> loop in PHP runs a block of code 
+        <strong> at least once</strong>, and then continues running as long as the condition is true.
       </p>
 
-      <h2>Basic do...while Loop</h2>
-      <p>Print $i as long as $i is less than 6:</p>
+      <p className="leading-relaxed">
+        Unlike the <code>while</code> loop, the <strong>condition is checked after executing</strong> 
+        the loop body.
+      </p>
 
-      <pre>
+      {/* Basic Example */}
+      <h2 className="text-2xl font-bold mt-10">Basic Example</h2>
+
+      <p className="leading-relaxed">
+        This example prints numbers from 1 to 5:
+      </p>
+
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono whitespace-pre-wrap">
 {`$i = 1;
 
 do {
@@ -23,18 +36,18 @@ do {
 } while ($i < 6);`}
       </pre>
 
-      <p>
-        <b>Note:</b> In a do...while loop, the condition is tested <b>after</b>
-        executing the statements within the loop. This ensures the loop runs at
-        least once, even if the condition is false.
+      <p className="leading-relaxed">
+        ⚠ <strong>Note:</strong> The loop body runs first, then the condition is checked.
       </p>
 
-      <h2>Example: Condition False Initially</h2>
-      <p>
-        Set $i = 8, then print $i as long as $i is less than 6:
+      {/* Condition False Example */}
+      <h2 className="text-2xl font-bold mt-10">Executes at Least Once</h2>
+
+      <p className="leading-relaxed">
+        Even if the condition is false on the first check, the code will run once.
       </p>
 
-      <pre>
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono whitespace-pre-wrap">
 {`$i = 8;
 
 do {
@@ -43,15 +56,18 @@ do {
 } while ($i < 6);`}
       </pre>
 
-      <p>
-        The block of code is executed <b>once</b>, even though the condition
-        never becomes true.
+      <p className="leading-relaxed">
+        Even though <code>$i &lt; 6</code> is false, the number <strong>8</strong> still prints once.
       </p>
 
-      <h2>PHP break Statement</h2>
-      <p>Stop the loop when $i is 3:</p>
+      {/* Break */}
+      <h2 className="text-2xl font-bold mt-10">The break Statement</h2>
 
-      <pre>
+      <p className="leading-relaxed">
+        Use <code>break</code> to stop the loop at any moment:
+      </p>
+
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono whitespace-pre-wrap">
 {`$i = 1;
 
 do {
@@ -61,12 +77,14 @@ do {
 } while ($i < 6);`}
       </pre>
 
-      <h2>PHP continue Statement</h2>
-      <p>
-        Skip the current iteration when $i is 3 and continue with the next:
+      {/* Continue */}
+      <h2 className="text-2xl font-bold mt-10">The continue Statement</h2>
+
+      <p className="leading-relaxed">
+        Use <code>continue</code> to skip an iteration and continue with the next one:
       </p>
 
-      <pre>
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono whitespace-pre-wrap">
 {`$i = 0;
 
 do {
@@ -75,6 +93,7 @@ do {
   echo $i;
 } while ($i < 6);`}
       </pre>
+
     </div>
   );
 };

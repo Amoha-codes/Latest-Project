@@ -2,17 +2,30 @@ import React from "react";
 
 const PhpContinueStatement: React.FC = () => {
   return (
-    <div className="p-6 leading-7">
-      <h1 className="text-3xl font-bold mb-4">PHP Continue Statement</h1>
+    <div className="mt-20 space-y-8">
 
-      <p>
-        The <b>continue</b> statement is used to skip the current iteration of a loop and move to the next iteration.
+      {/* Title */}
+      <h1 className="text-4xl font-extrabold border-b-2 pb-3">
+        PHP Continue Statement
+      </h1>
+
+      {/* Intro */}
+      <p className="leading-relaxed">
+        The <strong>continue</strong> statement stops the current iteration of a loop 
+        and immediately moves to the <strong>next</strong> iteration.
       </p>
 
-      {/* Continue in For Loop */}
-      <h2 className="text-2xl font-semibold mt-6">Continue in For Loop</h2>
-      <p>Move to the next iteration if <code>$x</code> is 4:</p>
-      <pre className="bg-gray-200 p-3 rounded mt-2">
+      {/* For Loop */}
+      <h2 className="text-2xl font-bold mt-10">Continue in for Loop</h2>
+
+      <p className="leading-relaxed">
+        Use <code>continue</code> to skip the current loop iteration inside a 
+        <strong> for loop</strong>.
+      </p>
+
+      <h3 className="text-xl font-semibold">Example</h3>
+
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono whitespace-pre-wrap">
 {`for ($x = 0; $x < 10; $x++) {
   if ($x == 4) {
     continue;
@@ -21,15 +34,19 @@ const PhpContinueStatement: React.FC = () => {
 }`}
       </pre>
 
-      {/* Continue in While Loop */}
-      <h2 className="text-2xl font-semibold mt-6">Continue in While Loop</h2>
-      <p>Move to the next iteration if <code>$x</code> is 4:</p>
-      <pre className="bg-gray-200 p-3 rounded mt-2">
+      {/* While Loop */}
+      <h2 className="text-2xl font-bold mt-10">Continue in while Loop</h2>
+
+      <p className="leading-relaxed">
+        The <code>continue</code> statement skips to the next iteration of a 
+        <strong> while loop</strong>.
+      </p>
+
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono whitespace-pre-wrap">
 {`$x = 0;
 
-while($x < 10) {
+while ($x < 10) {
   if ($x == 4) {
-    $x++;
     continue;
   }
   echo "The number is: $x <br>";
@@ -37,10 +54,15 @@ while($x < 10) {
 }`}
       </pre>
 
-      {/* Continue in Do While Loop */}
-      <h2 className="text-2xl font-semibold mt-6">Continue in Do...While Loop</h2>
-      <p>Stop and jump to the next iteration if <code>$i</code> is 3:</p>
-      <pre className="bg-gray-200 p-3 rounded mt-2">
+      {/* Do While Loop */}
+      <h2 className="text-2xl font-bold mt-10">Continue in do...while Loop</h2>
+
+      <p className="leading-relaxed">
+        Inside a <strong>do...while loop</strong>, continue jumps to the next iteration 
+        after executing the condition check.
+      </p>
+
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono whitespace-pre-wrap">
 {`$i = 0;
 
 do {
@@ -50,10 +72,15 @@ do {
 } while ($i < 6);`}
       </pre>
 
-      {/* Continue in Foreach Loop */}
-      <h2 className="text-2xl font-semibold mt-6">Continue in Foreach Loop</h2>
-      <p>Stop and jump to the next iteration if <code>$x</code> is "blue":</p>
-      <pre className="bg-gray-200 p-3 rounded mt-2">
+      {/* Foreach Loop */}
+      <h2 className="text-2xl font-bold mt-10">Continue in foreach Loop</h2>
+
+      <p className="leading-relaxed">
+        You can skip certain values when looping through arrays using 
+        <code> continue</code>.
+      </p>
+
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono whitespace-pre-wrap">
 {`$colors = array("red", "green", "blue", "yellow");
 
 foreach ($colors as $x) {
@@ -61,6 +88,7 @@ foreach ($colors as $x) {
   echo "$x <br>";
 }`}
       </pre>
+
     </div>
   );
 };

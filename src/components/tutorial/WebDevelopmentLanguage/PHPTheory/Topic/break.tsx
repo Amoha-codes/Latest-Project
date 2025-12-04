@@ -2,17 +2,30 @@ import React from "react";
 
 const PhpBreakStatement: React.FC = () => {
   return (
-    <div className="p-6 leading-7">
-      <h1 className="text-3xl font-bold mb-4">PHP Break Statement</h1>
+    <div className="mt-20 space-y-8">
 
-      <p>
-        The <b>break</b> statement is used to jump out of loops in PHP, regardless of the loop type.
+      {/* Title */}
+      <h1 className="text-4xl font-extrabold border-b-2 pb-3">
+        PHP Break Statement
+      </h1>
+
+      {/* Intro */}
+      <p className="leading-relaxed">
+        The <strong>break</strong> statement in PHP is used to immediately stop the 
+        execution of a loop. It works with all loop types: <code>for</code>, 
+        <code>while</code>, <code>do...while</code>, and <code>foreach</code>.
       </p>
 
       {/* Break in For Loop */}
-      <h2 className="text-2xl font-semibold mt-6">Break in For Loop</h2>
-      <p>Jump out of the loop when <code>$x</code> is 4:</p>
-      <pre className="bg-gray-200 p-3 rounded mt-2">
+      <h2 className="text-2xl font-bold mt-10">Break in for Loop</h2>
+
+      <p className="leading-relaxed">
+        Use <code>break</code> to jump out of a <strong>for loop</strong> before it finishes.
+      </p>
+
+      <h3 className="text-xl font-semibold">Example</h3>
+
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono whitespace-pre-wrap">
 {`for ($x = 0; $x < 10; $x++) {
   if ($x == 4) {
     break;
@@ -22,12 +35,16 @@ const PhpBreakStatement: React.FC = () => {
       </pre>
 
       {/* Break in While Loop */}
-      <h2 className="text-2xl font-semibold mt-6">Break in While Loop</h2>
-      <p>Jump out of the loop when <code>$x</code> is 4:</p>
-      <pre className="bg-gray-200 p-3 rounded mt-2">
+      <h2 className="text-2xl font-bold mt-10">Break in while Loop</h2>
+
+      <p className="leading-relaxed">
+        You can use <code>break</code> inside a <strong>while loop</strong> to stop it early.
+      </p>
+
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono whitespace-pre-wrap">
 {`$x = 0;
 
-while($x < 10) {
+while ($x < 10) {
   if ($x == 4) {
     break;
   }
@@ -37,9 +54,14 @@ while($x < 10) {
       </pre>
 
       {/* Break in Do While Loop */}
-      <h2 className="text-2xl font-semibold mt-6">Break in Do...While Loop</h2>
-      <p>Jump out of the loop when <code>$i</code> is 3:</p>
-      <pre className="bg-gray-200 p-3 rounded mt-2">
+      <h2 className="text-2xl font-bold mt-10">Break in do...while Loop</h2>
+
+      <p className="leading-relaxed">
+        The <code>break</code> statement works the same way inside a 
+        <strong> do...while loop</strong>.
+      </p>
+
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono whitespace-pre-wrap">
 {`$i = 1;
 
 do {
@@ -50,9 +72,13 @@ do {
       </pre>
 
       {/* Break in Foreach Loop */}
-      <h2 className="text-2xl font-semibold mt-6">Break in Foreach Loop</h2>
-      <p>Jump out of the loop if <code>$x</code> is "blue":</p>
-      <pre className="bg-gray-200 p-3 rounded mt-2">
+      <h2 className="text-2xl font-bold mt-10">Break in foreach Loop</h2>
+
+      <p className="leading-relaxed">
+        Use <code>break</code> to stop looping through an array when a match is found.
+      </p>
+
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono whitespace-pre-wrap">
 {`$colors = array("red", "green", "blue", "yellow");
 
 foreach ($colors as $x) {
@@ -60,6 +86,7 @@ foreach ($colors as $x) {
   echo "$x <br>";
 }`}
       </pre>
+
     </div>
   );
 };

@@ -2,51 +2,46 @@ import React from "react";
 
 const PhpFormHandling: React.FC = () => {
   return (
-    <div className="p-6">
+    <div className="mt-20 space-y-10">
+
       {/* Title */}
-      <h2 className="text-2xl font-medium mb-4 border-b pb-2 border-blue-300 mt-10">
+      <h1 className="text-4xl font-extrabold border-b-2 pb-3">
         PHP Form Handling
-      </h2>
+      </h1>
 
-      <p className="leading-relaxed mb-4">
-        PHP forms ke through user input collect kiya ja sakta hai using two
-        superglobals: <strong>$_GET</strong> and <strong>$_POST</strong>.
+      <p className="leading-relaxed">
+        PHP uses the superglobals <code>$_GET</code> and <code>$_POST</code> to collect form data.
+        These arrays contain key/value pairs sent from HTML forms.
       </p>
 
-      {/* Simple HTML Form */}
-      <h3 className="text-xl font-medium mb-3">PHP - A Simple HTML Form</h3>
+      {/* Section: Simple HTML Form */}
+      <h2 className="text-2xl font-bold mt-6">PHP - A Simple HTML Form</h2>
 
-      <p className="leading-relaxed mb-4">
-        Yeh example ek simple HTML form show karta hai jisme name aur email
-        input hai:
-      </p>
+      <p>A basic HTML form with two input fields and a submit button:</p>
 
-      <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded shadow-inner text-sm mb-6">
-        <pre className="font-mono text-black dark:text-gray-200">
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`<html>
 <body>
 
 <form action="welcome.php" method="POST">
-  Name: <input type="text" name="name"><br>
-  E-mail: <input type="text" name="email"><br>
-  <input type="submit">
+Name: <input type="text" name="name"><br>
+E-mail: <input type="text" name="email"><br>
+<input type="submit">
 </form>
 
 </body>
 </html>`}
-        </pre>
-      </div>
+      </pre>
 
-      <p className="leading-relaxed mb-4">
-        Form submit karne par data <strong>welcome.php</strong> me POST method
-        ke through send hota hai.
+      <p>
+        When the user submits this form, the data is sent to <code>welcome.php</code> using the
+        POST method.
       </p>
 
       {/* welcome.php */}
-      <h3 className="text-xl font-medium mb-3">welcome.php Example</h3>
+      <h3 className="text-xl font-semibold mt-6">PHP Processing File (welcome.php)</h3>
 
-      <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded shadow-inner text-sm mb-6">
-        <pre className="font-mono text-black dark:text-gray-200">
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`<html>
 <body>
 
@@ -55,30 +50,42 @@ Your email address is: <?php echo $_POST["email"]; ?>
 
 </body>
 </html>`}
-        </pre>
-      </div>
+      </pre>
 
-      {/* GET Example */}
-      <h3 className="text-xl font-medium mb-3">Same Example Using GET</h3>
-
-      <p className="leading-relaxed mb-4">
-        Yahi example GET method ke saath:
+      <p>
+        Output might look like this:
       </p>
 
-      <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded shadow-inner text-sm mb-6">
-        <pre className="font-mono text-black dark:text-gray-200">
-{`<form action="welcome_get.php" method="GET">
-  Name: <input type="text" name="name"><br>
-  E-mail: <input type="text" name="email"><br>
-  <input type="submit">
-</form>`}
-        </pre>
-      </div>
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
+{`Welcome John
+Your email address is john.doe@example.com`}
+      </pre>
 
-      <h3 className="text-xl font-medium mb-3">welcome_get.php</h3>
+      {/* GET Example */}
+      <h2 className="text-2xl font-bold mt-10">Same Form Using GET</h2>
 
-      <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded shadow-inner text-sm mb-6">
-        <pre className="font-mono text-black dark:text-gray-200">
+      <p>
+        The same result can be achieved using the HTTP GET method by changing the form method:
+      </p>
+
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
+{`<html>
+<body>
+
+<form action="welcome_get.php" method="GET">
+Name: <input type="text" name="name"><br>
+E-mail: <input type="text" name="email"><br>
+<input type="submit">
+</form>
+
+</body>
+</html>`}
+      </pre>
+
+      {/* welcome_get.php */}
+      <h3 className="text-xl font-semibold mt-6">PHP GET Processing File (welcome_get.php)</h3>
+
+      <pre className="bg-gray-100 text-black p-3 rounded-md font-mono">
 {`<html>
 <body>
 
@@ -87,54 +94,54 @@ Your email address is: <?php echo $_GET["email"]; ?>
 
 </body>
 </html>`}
-        </pre>
-      </div>
+      </pre>
 
-      {/* Security Note */}
-      <p className="leading-relaxed mb-4">
-        ⚠️ <strong>Note:</strong> Yeh examples validation include nahi karte.
-        Real applications me form validation bahut important hoti hai.
+      <p className="text-yellow-700 font-semibold">
+        ⚠️ Note: These examples do NOT include validation. Proper validation is necessary to protect
+        your script from malicious data.
       </p>
 
       {/* GET vs POST */}
-      <h3 className="text-xl font-medium mb-3">GET vs POST</h3>
+      <h2 className="text-3xl font-bold mt-12">GET vs POST</h2>
 
-      <p className="leading-relaxed mb-4">
-        GET aur POST dono associative arrays create karte hain jaha keys input
-        names aur values user inputs hoti hain.
+      <p>
+        Both GET and POST create arrays of key/value pairs where the keys are form field names and
+        values are user input.
       </p>
 
-      <ul className="list-disc list-inside space-y-2 ml-4 mb-4">
-        <li>
-          <strong>$_GET</strong> – URL parameters se data receive karta hai.
-        </li>
-        <li>
-          <strong>$_POST</strong> – HTTP POST method se data receive karta hai.
-        </li>
+      <ul className="list-disc ml-8 space-y-2">
+        <li><code>$_GET</code> — variables sent in the URL</li>
+        <li><code>$_POST</code> — variables sent in the request body</li>
       </ul>
 
-      {/* When to use GET */}
-      <h3 className="text-xl font-medium mb-3">When to use GET?</h3>
-      <ul className="list-disc list-inside space-y-2 ml-4 mb-4">
-        <li>Data URL me visible hota hai</li>
-        <li>Bookmark ho sakta hai</li>
-        <li>~2000 chars limit hoti hai</li>
-        <li>Sensitive info ke liye kabhi use nahi karna</li>
+      {/* When to Use GET */}
+      <h2 className="text-2xl font-bold mt-8">When to Use GET?</h2>
+
+      <ul className="list-disc ml-8 space-y-2">
+        <li>Data is visible in the URL</li>
+        <li>URL can be bookmarked</li>
+        <li>Suitable for non-sensitive data</li>
+        <li>Limited to ~2000 characters</li>
       </ul>
 
-      {/* When to use POST */}
-      <h3 className="text-xl font-medium mb-3">When to use POST?</h3>
-      <ul className="list-disc list-inside space-y-2 ml-4 mb-4">
-        <li>Data URL me visible nahi hota</li>
-        <li>No size limit</li>
-        <li>File upload support</li>
-        <li>Safer for sensitive data</li>
-      </ul>
-
-      <p className="leading-relaxed mb-4">
-        Developers mostly <strong>POST</strong> prefer karte hain form-data
-        ke liye.
+      <p className="text-red-600 font-semibold">
+        ❌ Never use GET for passwords or sensitive data!
       </p>
+
+      {/* When to Use POST */}
+      <h2 className="text-2xl font-bold mt-8">When to Use POST?</h2>
+
+      <ul className="list-disc ml-8 space-y-2">
+        <li>Data is hidden inside the HTTP request body</li>
+        <li>No size limitations</li>
+        <li>Supports file uploads</li>
+        <li>More secure than GET</li>
+      </ul>
+
+      <p>
+        However, POST requests cannot be bookmarked because the data is not visible in the URL.
+      </p>
+
     </div>
   );
 };

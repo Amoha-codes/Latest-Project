@@ -146,7 +146,6 @@ export const sidebarItems: SidebarItem[] = [
       { title: "LU Decomposition of a System of Linear Equations", component: "LUDecomposition" },
       { title: "Doolittle Algorithm: LU Decomposition", component: "DoolittleLU" },
       { title: "Eigen Values and Eigen Vectors", component: "EigenValuesVectors" },
-      { title: "Quiz on Linear Algebra", component: "LinearAlgebraQuiz" },
     ],
   },
 

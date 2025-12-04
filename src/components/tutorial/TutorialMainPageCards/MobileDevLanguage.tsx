@@ -23,7 +23,7 @@ const MobileDevelopmentPage = () => {
       problemsText: 'Problems',
       level: 'Beginner to Advanced',
       completed: false,
-     url: '/launchingsoon',
+     url: '/Swift',
       icon: 'swift',
       platform: 'iOS'
     },
@@ -34,7 +34,7 @@ const MobileDevelopmentPage = () => {
       problemsText: 'Problems',
       level: 'Beginner to Advanced',
       completed: false,
-      url: '/launchingsoon',
+      url: '/Kotlin',
       icon: 'kotlin',
       platform: 'Android'
     },
@@ -45,7 +45,7 @@ const MobileDevelopmentPage = () => {
       problemsText: 'Problems',
       level: 'Beginner to Advanced',
       completed: false,
-      url: '/launchingsoon',
+      url: '/JavaTutorial',
       icon: 'java',
       platform: 'Android'
     },
@@ -56,7 +56,7 @@ const MobileDevelopmentPage = () => {
       problemsText: 'Problems',
       level: 'Beginner to Advanced',
       completed: false,
-      url: '/launchingsoon',
+      url: '/DartProgramming',
       icon: 'dart',
       platform: 'Cross-Platform'
     },
@@ -67,7 +67,7 @@ const MobileDevelopmentPage = () => {
       problemsText: 'Problems',
       level: 'Beginner to Advanced',
       completed: false,
-      url: '/launchingsoon',
+      url: '/JSTutorial',
       icon: 'javascript',
       platform: 'Cross-Platform'
     },
@@ -78,7 +78,7 @@ const MobileDevelopmentPage = () => {
       problemsText: 'Problems',
       level: 'Beginner to Advanced',
       completed: false,
-      url: '/launchingsoon',
+      url: '/Csharp',
       icon: 'csharp',
       platform: 'Cross-Platform'
     }

@@ -152,6 +152,7 @@ const Sidebar: React.FC<SidebarProps> = ({ data, activeHref, onSelect, darkMode 
       });
       setOpenItems(parentHrefsToOpen);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeHref, data]);
 
   const toggleItem = (href: string) => {
@@ -163,7 +164,7 @@ const Sidebar: React.FC<SidebarProps> = ({ data, activeHref, onSelect, darkMode 
   return (
     <aside className={`w-64 border-r h-[calc(100vh-80px)] mt-[80px] overflow-y-auto p-4 scrollbar-hide 
         ${darkMode ? "bg-gray-900 border-gray-700 text-white" : "bg-white border-gray-200 text-gray-900"}`}>
-      <h2 className="text-xl font-bold mb-3 text-[#6334B9] dark:text-purple-300">C++ Theory</h2>
+      <h2 className="text-xl font-bold mb-3 text-[#6334B9] dark:text-purple-300">TypreScript Tutorial</h2>
       <ul className="space-y-1">
         {data.map((item) => {
           const hasChildren = !!item.children && item.children.length > 0;

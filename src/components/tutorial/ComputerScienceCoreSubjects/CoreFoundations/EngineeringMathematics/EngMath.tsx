@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 // Import Layout
 import Layout from './Layout.tsx';
 // Import sidebar data
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { sidebarItems } from './SidebarData.ts';
+ 
 
 // Import specific topic components
 import Home from './Topic/Home.tsx';
@@ -58,6 +57,38 @@ import GraphIsomorphisms from './Topic/GraphIsomorphisms.tsx';
 import EulerHamiltonian from './Topic/EulerHamiltonian.tsx';
 import PlanarGraphs from './Topic/PlanarGraphs.tsx';
 import Matching from './Topic/Matching.tsx';
+import GraphMeasurements from './Topic/GraphMeasurements.tsx';
+import BetweennessCentrality from './Topic/BetweennessCentrality.tsx';
+import BinaryTreeNodesHeight from './Topic/BinaryTreeNodesHeight.tsx';
+import MatrixIntro from './Topic/MatrixIntro.tsx';
+import MatrixOperations from './Topic/MatrixOperations.tsx';
+import MatrixGraphRelations from './Topic/MatrixGraphRelations.tsx';
+import LinearEquations from './Topic/LinearEquations.tsx';
+import LUDecomposition from './Topic/LUDecomposition.tsx';
+import DoolittleLU from './Topic/DoolittleLU.tsx';
+import EigenValuesVectors from './Topic/EigenValuesVectors.tsx';
+import LimitsContinuity from './Topic/LimitsContinuity.tsx';
+import InverseComposition from './Topic/InverseComposition.tsx';
+import RollesTheorem from './Topic/RollesTheorem.tsx';
+import LagrangeTheorem from './Topic/LagrangeTheorem.tsx';
+import CauchyTheorem from './Topic/CauchyTheorem.tsx';
+import UnimodalBimodal from './Topic/UnimodalBimodal.tsx';
+import IndefiniteIntegrals from './Topic/IndefiniteIntegrals.tsx';
+import ScalesMeasurement from './Topic/ScalesMeasurement.tsx';
+import DataTypes from './Topic/DataTypes.tsx';
+import MeanVarianceSD from './Topic/MeanVarianceSD.tsx';
+import CovarianceCorrelation from './Topic/CovarianceCorrelation.tsx';
+import TotalProbability from './Topic/TotalProbability.tsx';
+import BinomialDistribution from './Topic/BinomialDistribution.tsx';
+import Hypergeometric from './Topic/Hypergeometric.tsx';
+import PoissonDistribution from './Topic/PoissonDistribution.tsx';
+import UniformDistribution from './Topic/UniformDistribution.tsx';
+import ExponentialDistribution from './Topic/ExponentialDistribution.tsx';
+import NormalDistribution from './Topic/NormalDistribution.tsx';
+import HomogeneousPoisson from './Topic/HomogeneousPoisson.tsx';
+import NonhomogeneousPoisson from './Topic/NonhomogeneousPoisson.tsx';
+import RenewalProcesses from './Topic/RenewalProcesses.tsx';
+import NewtonInterpolation from './Topic/NewtonInterpolation.tsx';
 
 
 // Map topic keys (from SidebarData) to actual components
@@ -123,10 +154,44 @@ const topicComponents: { [key: string]: React.FC } = {
   EulerHamiltonian:EulerHamiltonian,
   PlanarGraphs:PlanarGraphs,
   Matching:Matching,
-  // GraphMeasurements:GraphMeasurements,
-  // BetweennessCentrality:BetweennessCentrality,
-  // BinaryTreeNodesHeight:BinaryTreeNodesHeight,
-  // GraphTheoryPractice:GraphTheoryPractice,
+  GraphMeasurements:GraphMeasurements,
+  BetweennessCentrality:BetweennessCentrality,
+  BinaryTreeNodesHeight:BinaryTreeNodesHeight,
+
+  // 6.
+  MatrixIntro:MatrixIntro,
+  MatrixOperations:MatrixOperations,
+  MatrixGraphRelations:MatrixGraphRelations,
+  LinearEquations:LinearEquations,
+  LUDecomposition:LUDecomposition,
+  DoolittleLU:DoolittleLU,
+  EigenValuesVectors:EigenValuesVectors,
+
+  // 7.
+  LimitsContinuity:LimitsContinuity,
+  InverseComposition:InverseComposition,
+  RollesTheorem:RollesTheorem,
+  LagrangeTheorem:LagrangeTheorem,
+  CauchyTheorem:CauchyTheorem,
+  UnimodalBimodal:UnimodalBimodal,
+  IndefiniteIntegrals:IndefiniteIntegrals,
+
+  // 8.
+  ScalesMeasurement:ScalesMeasurement,
+  DataTypes:DataTypes,
+  MeanVarianceSD:MeanVarianceSD,
+  CovarianceCorrelation:CovarianceCorrelation,
+  TotalProbability:TotalProbability,
+  BinomialDistribution:BinomialDistribution,
+  Hypergeometric:Hypergeometric,
+  PoissonDistribution:PoissonDistribution,
+  UniformDistribution:UniformDistribution,
+  ExponentialDistribution:ExponentialDistribution,
+  NormalDistribution:NormalDistribution,
+  HomogeneousPoisson:HomogeneousPoisson,
+  NonhomogeneousPoisson:NonhomogeneousPoisson,
+  RenewalProcesses:RenewalProcesses,
+  NewtonInterpolation:NewtonInterpolation,
  
 };
 
