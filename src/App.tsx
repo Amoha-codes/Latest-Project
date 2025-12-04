@@ -102,6 +102,8 @@ import Ruby from "./components/tutorial/ProgrammingLanguage/Ruby/Ruby.tsx";
 import Rust from "./components/tutorial/ProgrammingLanguage/Rust/Rust.tsx";
 import DartProgramming from "./components/tutorial/ProgrammingLanguage/Dart/DartProgramming.tsx";
 import HTML from "./components/tutorial/WebDevelopmentLanguage/HTML/HTML.tsx";
+import CSS from "./components/tutorial/WebDevelopmentLanguage/CSS/CSS.tsx";
+
 import Php from "./components/tutorial/WebDevelopmentLanguage/PHPTheory/Php.tsx";
 import Sql from "./components/tutorial/WebDevelopmentLanguage/SQL/Sql.tsx";
 import Graphql from "./components/tutorial/WebDevelopmentLanguage/GRAPHQL/Graphql.tsx";
@@ -197,6 +199,7 @@ const App: React.FC = () => {
         <Route path="/DartProgramming" element={<DartProgramming  darkMode={darkMode}/>} />
 
         <Route path="/HTML" element={<HTML  darkMode={darkMode}/>} />
+        <Route path="/CSS" element={<CSS darkMode={darkMode} />} />
         <Route path="/Php" element={<Php  darkMode={darkMode}/>} />
         <Route path="/Sql" element={<Sql  darkMode={darkMode}/>} />
         <Route path="/Graphql" element={<Graphql  darkMode={darkMode}/>} />
